@@ -4,6 +4,21 @@ namespace GestiuneCD.Domain
 {
     public class CD
     {
+        public CD()
+        {
+        }
+
+        public CD(string nume, int dimensiuneMB, int vitezaDeInscriptionare, Tip tip, decimal spatiuOcupat, int nrDeSesiuni, string tipSesiune)
+        {
+            this.nume = nume;
+            this.dimensiuneMB = dimensiuneMB;
+            this.vitezaDeInscriptionare = vitezaDeInscriptionare;
+            this.tip = tip;
+            this.spatiuOcupat = spatiuOcupat;
+            this.nrDeSesiuni = nrDeSesiuni;
+            this.tipSesiune = tipSesiune;
+        }
+
         public int id { get; set; }
         public string nume { get; set; }
         public int dimensiuneMB { get; set; }

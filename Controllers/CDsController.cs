@@ -23,9 +23,36 @@ namespace GestiuneCD.Controllers
 
         // GET: api/CDs
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CD>>> GetCDs()
+        public async Task<ActionResult<IEnumerable<CD>>> GetCDs(bool? orderByName = false, int? minSpatiuLiber = 0)
         {
-            return await _context.CDs.ToListAsync();
+            //Filters results by deadline
+            IQueryable<CD> result = _context.CDs;
+
+            if (orderByName == true)
+                result = result.OrderBy(f => f.nume);
+
+            if (minSpatiuLiber > 0)
+                result = result.Where(f => (f.dimensiuneMB - f.spatiuOcupat) >= minSpatiuLiber);
+
+            //return await _context.CDs.ToListAsync();
+            return await result.ToListAsync();
+        }
+
+        // GET: api/CDs
+        [HttpGet("/BasedOnAttributes")]
+        public async Task<ActionResult<IEnumerable<CD>>> GetCDsByAttributes(int? vitezaDeInscriptionare = 0, string? tipCD = null)
+        {
+            //Filters results by deadline
+            IQueryable<CD> result = _context.CDs;
+
+            if (vitezaDeInscriptionare != 0)
+                result = result.Where(f => f.vitezaDeInscriptionare == vitezaDeInscriptionare);
+
+            if (tipCD != null)
+                result = result.Where(f => f.tip.Equals(tipCD));
+
+            //return await _context.CDs.ToListAsync();
+            return await result.ToListAsync();
         }
 
         // GET: api/CDs/5
@@ -83,6 +110,37 @@ namespace GestiuneCD.Controllers
 
             //return CreatedAtAction("GetCD", new { id = cD.id }, cD);
             return CreatedAtAction(nameof(GetCD), new { id = cD.id }, cD);
+        }
+
+        // POST: Order api/CDs
+        [HttpPost("/OrderBySize")]
+        public async Task<ActionResult<IEnumerable<CD>>> OrderBySize(string? orderMethod = "ASC")
+        {
+            List<CD> OrderedList = new List<CD>();
+
+            switch (orderMethod)
+            {
+                case "ASC":
+                    OrderedList = _context.CDs.OrderBy(f => f.dimensiuneMB).ToList();
+                    break;
+
+                case "DESC":
+                    OrderedList = _context.CDs.OrderByDescending(f => f.dimensiuneMB).ToList();
+                    break;
+
+                default:
+                    break;
+            }
+
+            foreach (var item in _context.CDs)
+                _context.CDs.Remove(item);
+
+            foreach (var item in OrderedList)
+                _context.CDs.Add(new CD(item.nume, item.dimensiuneMB, item.vitezaDeInscriptionare, item.tip, item.spatiuOcupat, item.nrDeSesiuni, item.tipSesiune));
+
+            await _context.SaveChangesAsync();
+
+            return await _context.CDs.ToListAsync();
         }
 
         // DELETE: api/CDs/5
