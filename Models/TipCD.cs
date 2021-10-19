@@ -2,8 +2,9 @@
 
 namespace GestiuneCD.Domain
 {
-    public enum Tip
+    public enum TipCD
     {
+        CDDA,
         CDR,
         CDRW
     }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GestiuneCD.Domain;
 using GestiuneCD.Persistence;
+using GestiuneCD.Models;
 
 namespace GestiuneCD.Controllers
 {
@@ -21,6 +22,9 @@ namespace GestiuneCD.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Returneaza toate CD-urile.
+        /// </summary>
         // GET: api/CDs
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CD>>> GetCDs(bool? orderedByName = false, int? minSpatiuLiber = 0)
@@ -38,6 +42,9 @@ namespace GestiuneCD.Controllers
             return await result.ToListAsync();
         }
 
+        /// <summary>
+        /// Returneaza datele tuturor CD-urilor bazate pe anumite atribute - viteza de inscriptionare, tipul de CD.
+        /// </summary>
         // GET: api/CDs
         [HttpGet("/BasedOnAttributes")]
         public async Task<ActionResult<IEnumerable<CD>>> GetCDsByAttributes(int? vitezaDeInscriptionare = 0, string? tipCD = null)
@@ -55,6 +62,9 @@ namespace GestiuneCD.Controllers
             return await result.ToListAsync();
         }
 
+        /// <summary>
+        /// Returneaza un CD specific.
+        /// </summary>
         // GET: api/CDs/5
         [HttpGet("{id}")]
         public async Task<ActionResult<CD>> GetCD(int id)
@@ -69,17 +79,38 @@ namespace GestiuneCD.Controllers
             return cD;
         }
 
+        /// <summary>
+        /// Modifica un CD specific.
+        /// </summary>
         // PUT: api/CDs/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCD(int id, CD cD)
+        public async Task<IActionResult> PutCD(int id, CDUpdateDTO cDUpdateDTO)
         {
-            if (id != cD.id)
-            {
-                return BadRequest();
-            }
+            if (!CDExists(id))
+                return BadRequest("Id-ul introdus nu exista in baza de date!");
 
-            _context.Entry(cD).State = EntityState.Modified;
+            CD retrievedCD = await _context.CDs.FirstOrDefaultAsync(f => f.id == id);
+
+            if(retrievedCD.tip != TipCD.CDRW 
+                && cDUpdateDTO.tipSesiune == TipSesiune.Scriere 
+                && retrievedCD.nrDeSesiuni > 0)
+                return BadRequest("Tipul acesta de CD nu permite rescrierea datelor!");
+
+            decimal spatiuOcupatAditional = (cDUpdateDTO.tipSesiune == TipSesiune.Scriere) ? cDUpdateDTO.spatiuOcupatAditional : 0;
+            int nrDeSesiuniAditionale = (cDUpdateDTO.tipSesiune != TipSesiune.Null) ? 1 : 0;
+            
+            CD tempCD = new CD( cDUpdateDTO.nume,
+                                retrievedCD.dimensiuneMB,
+                                cDUpdateDTO.vitezaDeInscriptionare,
+                                retrievedCD.tip,
+                                spatiuOcupatAditional+retrievedCD.spatiuOcupat,
+                                retrievedCD.nrDeSesiuni+ nrDeSesiuniAditionale,
+                                cDUpdateDTO.tipSesiune
+                                );
+            tempCD.id = id;
+
+            _context.Entry(retrievedCD).CurrentValues.SetValues(tempCD);
 
             try
             {
@@ -97,21 +128,33 @@ namespace GestiuneCD.Controllers
                 }
             }
 
-            return NoContent();
+            return CreatedAtAction(nameof(GetCD), new { id = tempCD.id }, tempCD);
         }
 
+        /// <summary>
+        /// Creaza un CD nou.
+        /// </summary>
         // POST: api/CDs
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<CD>> PostCD(CD cD)
+        public async Task<ActionResult<CDSetupDTO>> PostCD(CDSetupDTO cDSetupDTO)
         {
-            _context.CDs.Add(cD);
+
+            int dimensiuneMB = (cDSetupDTO.tip == TipCD.CDDA) ? 804 : 700;
+            int nrDeSesiuni = (cDSetupDTO.tipSesiune == TipSesiune.Null) ? 0 : 1;
+            
+            CD tempCD = new CD(cDSetupDTO.nume, dimensiuneMB, cDSetupDTO.vitezaDeInscriptionare, cDSetupDTO.tip, cDSetupDTO.spatiuOcupat, nrDeSesiuni, cDSetupDTO.tipSesiune);
+
+            _context.CDs.Add(tempCD);
             await _context.SaveChangesAsync();
 
             //return CreatedAtAction("GetCD", new { id = cD.id }, cD);
-            return CreatedAtAction(nameof(GetCD), new { id = cD.id }, cD);
+            return CreatedAtAction(nameof(GetCD), new { id = tempCD.id }, tempCD);
         }
 
+        /// <summary>
+        /// Ordoneaza CD-urile dupa dimensiunea lor in Mb.
+        /// </summary>
         // POST: Order api/CDs
         [HttpPost("/OrderBySize")]
         public async Task<ActionResult<IEnumerable<CD>>> OrderBySize(string? orderMethod = "ASC")
@@ -144,7 +187,7 @@ namespace GestiuneCD.Controllers
         }
 
         /// <summary>
-        /// Deletes a specific CD.
+        /// Sterge un CD specific.
         /// </summary>
         /// <param name="id"></param> 
         /// <response code="200">Product deleted!</response>
