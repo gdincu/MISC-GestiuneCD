@@ -47,7 +47,7 @@ namespace GestiuneCD.Controllers
         /// </summary>
         // GET: api/CDs
         [HttpGet("/BasedOnAttributes")]
-        public async Task<ActionResult<IEnumerable<CD>>> GetCDsByAttributes(int? vitezaDeInscriptionare = 0, string? tipCD = null)
+        public async Task<ActionResult<IEnumerable<CD>>> GetCDsByAttributes(int? vitezaDeInscriptionare = 0, TipCD? tipCD = null)
         {
             //Filters results by deadline
             IQueryable<CD> result = _context.CDs;
@@ -56,7 +56,7 @@ namespace GestiuneCD.Controllers
                 result = result.Where(f => f.vitezaDeInscriptionare == vitezaDeInscriptionare);
 
             if (tipCD != null)
-                result = result.Where(f => f.tip.Equals(tipCD));
+                result = result.Where(f => f.tip == tipCD);
 
             //return await _context.CDs.ToListAsync();
             return await result.ToListAsync();
@@ -96,6 +96,10 @@ namespace GestiuneCD.Controllers
                 && cDUpdateDTO.tipSesiune == TipSesiune.Scriere 
                 && retrievedCD.nrDeSesiuni > 0)
                 return BadRequest("Tipul acesta de CD nu permite rescrierea datelor!");
+
+            if(cDUpdateDTO.spatiuOcupatAditional + retrievedCD.spatiuOcupat > retrievedCD.dimensiuneMB 
+                && cDUpdateDTO.tipSesiune.Equals(TipSesiune.Scriere))
+                return BadRequest("Aceasta operatiune ar rezulta in dimensiunea maxima a acestui CD sa fie depasita!");
 
             decimal spatiuOcupatAditional = (cDUpdateDTO.tipSesiune == TipSesiune.Scriere) ? cDUpdateDTO.spatiuOcupatAditional : 0;
             int nrDeSesiuniAditionale = (cDUpdateDTO.tipSesiune != TipSesiune.Null) ? 1 : 0;
@@ -141,6 +145,9 @@ namespace GestiuneCD.Controllers
         {
 
             int dimensiuneMB = (cDSetupDTO.tip == TipCD.CDDA) ? 804 : 700;
+            if (cDSetupDTO.spatiuOcupat > dimensiuneMB)
+                return BadRequest("Spatiul ocupat nu poate depasi capacitatea acestui tip de CD!");
+
             int nrDeSesiuni = (cDSetupDTO.tipSesiune == TipSesiune.Null) ? 0 : 1;
             
             CD tempCD = new CD(cDSetupDTO.nume, dimensiuneMB, cDSetupDTO.vitezaDeInscriptionare, cDSetupDTO.tip, cDSetupDTO.spatiuOcupat, nrDeSesiuni, cDSetupDTO.tipSesiune);
