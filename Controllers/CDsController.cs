@@ -23,12 +23,12 @@ namespace GestiuneCD.Controllers
 
         // GET: api/CDs
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CD>>> GetCDs(bool? orderByName = false, int? minSpatiuLiber = 0)
+        public async Task<ActionResult<IEnumerable<CD>>> GetCDs(bool? orderedByName = false, int? minSpatiuLiber = 0)
         {
             //Filters results by deadline
             IQueryable<CD> result = _context.CDs;
 
-            if (orderByName == true)
+            if (orderedByName == true)
                 result = result.OrderBy(f => f.nume);
 
             if (minSpatiuLiber > 0)
@@ -143,7 +143,13 @@ namespace GestiuneCD.Controllers
             return await _context.CDs.ToListAsync();
         }
 
-        // DELETE: api/CDs/5
+        /// <summary>
+        /// Deletes a specific CD.
+        /// </summary>
+        /// <param name="id"></param> 
+        /// <response code="200">Product deleted!</response>
+        /// <response code="404">CD not found!</response>
+        /// <response code="500">Oops! Can't delete the CD right now</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCD(int id)
         {
