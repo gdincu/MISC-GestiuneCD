@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using GestiuneCD.Domain;
 using GestiuneCD.Persistence;
 using GestiuneCD.Models;
+using GestiuneCD.Models.Specifications;
+using System;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace GestiuneCD.Controllers
 {
@@ -10,11 +13,11 @@ namespace GestiuneCD.Controllers
     [ApiController]
     public class CDsController : ControllerBase
     {
-        private readonly ICDsService<CD> _cdRepository;
+        private readonly ICDsService<CD> _cDsService;
 
-        public CDsController(ICDsService<CD> cdRepository, AppDbContext appDbContext)
+        public CDsController(ICDsService<CD> cDsService)
         {
-            _cdRepository = cdRepository;
+            _cDsService = cDsService;
         }
 
         /// <summary>
@@ -22,19 +25,14 @@ namespace GestiuneCD.Controllers
         /// </summary>
         // GET: api/CDs
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CD>>> GetCDs(bool? orderedByName = false, int? minSpatiuLiber = 0)
-        { 
-            return Ok(await _cdRepository.GetItemsAsync(orderedByName, minSpatiuLiber));
-        }
-
-        /// <summary>
-        /// Returneaza datele tuturor CD-urilor bazate pe anumite atribute - viteza de inscriptionare, tipul de CD.
-        /// </summary>
-        // GET: api/CDs
-        [HttpGet("/BasedOnAttributes")]
-        public async Task<ActionResult<IEnumerable<CD>>> GetCDsByAttributes(int? vitezaDeInscriptionare = 0, TipCD? tipCD = null)
+        public async Task<ActionResult<IEnumerable<CD>>> GetCDs([FromQuery]CDParams parameters)
         {
-            return Ok(await _cdRepository.GetItemsAsync(false,0,vitezaDeInscriptionare, tipCD));
+            if (parameters is null)
+            {
+                throw new ArgumentNullException(nameof(parameters));
+            }
+
+            return Ok(await _cDsService.GetItemsAsync(parameters.orderedByName, parameters.minSpatiuLiber,parameters.vitezaDeInscriptionare,parameters.tipCD));
         }
 
         /// <summary>
@@ -44,7 +42,15 @@ namespace GestiuneCD.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<CD>> GetCD(int id)
         {
-            return Ok(await _cdRepository.GetItemByIdAsync(id));
+            try
+            {
+                var result = await _cDsService.GetItemByIdAsync(id);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         /// <summary>
@@ -55,7 +61,15 @@ namespace GestiuneCD.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCD(int id, CDUpdateDTO cDUpdateDTO)
         {
-            return Ok(await _cdRepository.UpdateItemAsync(id, cDUpdateDTO));    
+            try
+            {
+                var result = await _cDsService.UpdateItemAsync(id, cDUpdateDTO);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         /// <summary>
@@ -66,7 +80,7 @@ namespace GestiuneCD.Controllers
         [HttpPost]
         public async Task<ActionResult<CD>> PostCD(CDSetupDTO cDSetupDTO)
         {
-            return Ok(await _cdRepository.CreateItemAsync(cDSetupDTO));
+            return Ok(await _cDsService.CreateItemAsync(cDSetupDTO));
         }
 
         /// <summary>
@@ -76,20 +90,28 @@ namespace GestiuneCD.Controllers
         [HttpPost("/OrderBySize")]
         public async Task<ActionResult<IEnumerable<CD>>> OrderBySize(string? orderMethod = "ASC")
         {
-           return Ok(await _cdRepository.OrderBySize(orderMethod));
+           return Ok(await _cDsService.OrderBySize(orderMethod));
         }
 
         /// <summary>
         /// Sterge un CD specific.
         /// </summary>
         /// <param name="id"></param> 
-        /// <response code="200">Product deleted!</response>
+        /// <response code="204">Product deleted!</response>
         /// <response code="404">CD not found!</response>
         /// <response code="500">Oops! Can't delete the CD right now</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCD(int id)
         {
-            return Ok(await _cdRepository.DeleteItemAsync(id));
+            try
+            {
+                var result = await _cDsService.DeleteItemAsync(id);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
         }
     }
 }
