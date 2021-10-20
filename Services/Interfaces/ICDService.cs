@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestiuneCD.Persistence
 {
-    public interface ICDsService<T> where T : BaseEntity
+    public interface ICDService<T> where T : BaseEntity
     {
         Task<T> GetItemByIdAsync(int id);
         Task<IEnumerable<T>> GetItemsAsync(bool? orderedByName = false, int? minSpatiuLiber = 0, int? vitezaDeInscriptionare = 0, TipCD? tipCD = null);

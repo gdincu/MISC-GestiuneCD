@@ -1,5 +1,8 @@
 using GestiuneCD.Domain;
+using GestiuneCD.Models.Entities;
 using GestiuneCD.Persistence;
+using GestiuneCD.Services;
+using GestiuneCD.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
@@ -12,7 +15,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("CDs")));
 
-builder.Services.AddScoped<ICDsService<CD>, CDsService>();
+builder.Services.AddScoped<ICDService<CD>, CDService>();
+builder.Services.AddScoped<ISesiuneService<Sesiune>, SesiuneService>();
 
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 

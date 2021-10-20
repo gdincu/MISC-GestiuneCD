@@ -19,7 +19,5 @@ namespace GestiuneCD.Models
         [Required]
         [Column(TypeName = "decimal(18,4)")]
         public decimal spatiuOcupat { get; set; }
-        [Required]
-        public TipSesiune tipSesiune { get; set; }
     }
 }

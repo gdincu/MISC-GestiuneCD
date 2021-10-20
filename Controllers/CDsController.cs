@@ -13,9 +13,9 @@ namespace GestiuneCD.Controllers
     [ApiController]
     public class CDsController : ControllerBase
     {
-        private readonly ICDsService<CD> _cDsService;
+        private readonly ICDService<CD> _cDsService;
 
-        public CDsController(ICDsService<CD> cDsService)
+        public CDsController(ICDService<CD> cDsService)
         {
             _cDsService = cDsService;
         }

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace GestiuneCD.Persistence
 {
-    public class CDsService : ICDsService<CD>
+    public class CDService : ICDService<CD>
     {
         private readonly AppDbContext _context;
 
-        public CDsService(AppDbContext context)
+        public CDService(AppDbContext context)
         {
             _context = context;
         }
@@ -25,9 +25,7 @@ namespace GestiuneCD.Persistence
             if (entity.spatiuOcupat > dimensiuneMB)
                 throw new Exception("Spatiul ocupat nu poate depasi capacitatea acestui tip de CD!");
 
-            int nrDeSesiuni = (entity.tipSesiune == TipSesiune.Null) ? 0 : 1;
-
-            CD tempCD = new CD(entity.nume, dimensiuneMB, entity.vitezaDeInscriptionare, entity.tip, entity.spatiuOcupat, nrDeSesiuni, entity.tipSesiune);
+            CD tempCD = new CD(entity.nume, dimensiuneMB, entity.vitezaDeInscriptionare, entity.tip, entity.spatiuOcupat, 0);
 
             _context.CDs.Add(tempCD);
             await _context.SaveChangesAsync();
@@ -79,25 +77,12 @@ namespace GestiuneCD.Persistence
 
             CD retrievedCD = await _context.CDs.FirstOrDefaultAsync(f => f.id == id);
 
-            if (retrievedCD.tip != TipCD.CDRW
-                && entity.tipSesiune == TipSesiune.Scriere
-                && retrievedCD.nrDeSesiuni > 0)
-                throw new Exception("Tipul acesta de CD nu permite rescrierea datelor!");
-
-            if (entity.spatiuOcupatAditional + retrievedCD.spatiuOcupat > retrievedCD.dimensiuneMB
-                && entity.tipSesiune.Equals(TipSesiune.Scriere))
-                throw new Exception("Aceasta operatiune ar rezulta in dimensiunea maxima a acestui CD sa fie depasita!");
-
-            decimal spatiuOcupatAditional = (entity.tipSesiune == TipSesiune.Scriere) ? entity.spatiuOcupatAditional : 0;
-            int nrDeSesiuniAditionale = (entity.tipSesiune != TipSesiune.Null) ? 1 : 0;
-
             CD tempCD = new CD(entity.nume,
                                 retrievedCD.dimensiuneMB,
                                 entity.vitezaDeInscriptionare,
                                 retrievedCD.tip,
-                                spatiuOcupatAditional + retrievedCD.spatiuOcupat,
-                                retrievedCD.nrDeSesiuni + nrDeSesiuniAditionale,
-                                entity.tipSesiune
+                                retrievedCD.spatiuOcupat,
+                                retrievedCD.nrDeSesiuni
                                 );
             tempCD.id = id;
 
@@ -138,7 +123,7 @@ namespace GestiuneCD.Persistence
                 _context.CDs.Remove(item);
 
             foreach (var item in OrderedList)
-                _context.CDs.Add(new CD(item.nume, item.dimensiuneMB, item.vitezaDeInscriptionare, item.tip, item.spatiuOcupat, item.nrDeSesiuni, item.tipSesiune));
+                _context.CDs.Add(new CD(item.nume, item.dimensiuneMB, item.vitezaDeInscriptionare, item.tip, item.spatiuOcupat, item.nrDeSesiuni));
 
             await _context.SaveChangesAsync();
 

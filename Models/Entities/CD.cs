@@ -13,14 +13,13 @@ namespace GestiuneCD.Domain
         public TipCD tip { get; set; }
         [Column(TypeName = "decimal(18,4)")]
         public decimal spatiuOcupat { get; set; }
-        public int nrDeSesiuni { get; set; }
-        public TipSesiune tipSesiune { get; set; }
+        public int nrDeSesiuni { get; set; } = 0;
 
         public CD()
         {
         }
 
-        public CD(string nume, int dimensiuneMB, int vitezaDeInscriptionare, TipCD tip, decimal spatiuOcupat, int nrDeSesiuni, TipSesiune tipSesiune)
+        public CD(string nume, int dimensiuneMB, int vitezaDeInscriptionare, TipCD tip, decimal spatiuOcupat, int nrDeSesiuni)
         {
             this.nume = nume;
             this.dimensiuneMB = dimensiuneMB;
@@ -28,7 +27,6 @@ namespace GestiuneCD.Domain
             this.tip = tip;
             this.spatiuOcupat = spatiuOcupat;
             this.nrDeSesiuni = nrDeSesiuni;
-            this.tipSesiune = tipSesiune;
         }
 
         public static implicit operator CD(ActionResult<CD> v)

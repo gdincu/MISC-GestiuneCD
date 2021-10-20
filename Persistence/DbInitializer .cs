@@ -38,7 +38,6 @@ namespace GestiuneCD.Persistence
                         {
                             nume = "Test1",
                             tip = TipCD.CDRW,
-                            tipSesiune = TipSesiune.Null,
                             nrDeSesiuni = 0,
                             dimensiuneMB = 700,
                             spatiuOcupat = 100,
