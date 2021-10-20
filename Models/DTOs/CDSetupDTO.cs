@@ -6,9 +6,13 @@ namespace GestiuneCD.Models
 {
     public class CDSetupDTO
     {
-        [Required]
+        [Required(ErrorMessage = "{0} este obligatoriu")]
+        [StringLength(50, MinimumLength = 3,
+        ErrorMessage = "Numele trebuie sa contina minim 3 caractere si maxim 50 de caractere")]
+        [DataType(DataType.Text)]
         public string nume { get; set; }
-        [Required]
+        [Required(ErrorMessage = "{0} este obligatorie")]
+        [Range(0, int.MaxValue, ErrorMessage = "{0} poate fi doar un numar intreg pozitiv")]
         public int vitezaDeInscriptionare { get; set; }
         [Required]
         public TipCD tip { get; set; }

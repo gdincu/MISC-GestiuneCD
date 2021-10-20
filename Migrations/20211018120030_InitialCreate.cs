@@ -26,6 +26,7 @@ namespace GestiuneCD.Migrations
                 {
                     table.PrimaryKey("PK_CDs", x => x.id);
                 });
+
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

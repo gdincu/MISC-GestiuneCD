@@ -4,10 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GestiuneCD.Domain
 {
-    public class CD
+    public class CD : BaseEntity
     {
 
-        public int id { get; set; }
         public string nume { get; set; }
         public int dimensiuneMB { get; set; }
         public int vitezaDeInscriptionare { get; set; }
