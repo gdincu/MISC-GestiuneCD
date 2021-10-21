@@ -8,8 +8,9 @@ namespace GestiuneCD.Services.Interfaces
     {
         Task<T> GetItemByIdAsync(int id);
         Task<IEnumerable<T>> GetItemsAsync();
-        Task<ActionResult<T>> UpdateItemAsync(int id, T entity);
-        Task<ActionResult<T>> CreateItemAsync(SesiuneSetupDTO entity);
+        Task<ActionResult<T>> UpdateItemAsync(int id);
+        Task<ActionResult<T>> CreateItemAsync(SesiuneSetupDTO entity,decimal? spatiuAditionalOcupat);
         Task<ActionResult<T>> DeleteItemAsync(int id);
+        Task<IEnumerable<T>> InchideSesiunileDeschise();
     }
 }

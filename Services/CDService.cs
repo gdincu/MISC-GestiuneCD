@@ -1,5 +1,6 @@
 ﻿using GestiuneCD.Domain;
 using GestiuneCD.Models;
+using GestiuneCD.Models.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -51,7 +52,7 @@ namespace GestiuneCD.Persistence
             return await _context.FindAsync<CD>(id);
         }
 
-        public async Task<IEnumerable<CD>> GetItemsAsync(bool? orderedByName = false, int? minSpatiuLiber = 0, int? vitezaDeInscriptionare = 0, TipCD? tipCD = null)
+        public async Task<IEnumerable<CD>> GetItemsAsync(bool? orderedByName = false, int? minSpatiuLiber = 0, int? vitezaDeInscriptionare = 0, TipCD? tipCD = null, bool? cuSesiuniDeschise = null)
         {
             IQueryable<CD> result = _context.CDs;
 
@@ -66,6 +67,17 @@ namespace GestiuneCD.Persistence
 
             if (tipCD != null)
                 result = result.Where(f => f.tip == tipCD);
+
+            if (cuSesiuniDeschise != null && cuSesiuniDeschise == true)
+            {
+                var listaSesiuniDeschise = _context.Sesiuni.Where(f => f.statusSesiune.Equals(StatusSesiune.Deschis));
+                
+                List<int> listaDeIDuri = new();
+                foreach (var item in listaSesiuniDeschise)
+                    listaDeIDuri.Add(item.idCD);
+
+                result = result.Where(f => listaDeIDuri.Contains(f.id));
+            }
 
             return await result.ToListAsync();
         }

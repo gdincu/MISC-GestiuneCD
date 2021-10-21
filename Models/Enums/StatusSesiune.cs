@@ -2,7 +2,7 @@
 {
     public enum StatusSesiune
     {
-        Inchis,
-        Deschis
+        Deschis,
+        Inchis
     }
 }

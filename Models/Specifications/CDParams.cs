@@ -8,5 +8,6 @@ namespace GestiuneCD.Models.Specifications
         public int? minSpatiuLiber { get; set; } = 0;
         public int? vitezaDeInscriptionare { get; set; } = 0;
         public TipCD? tipCD { get; set; } = null;
+        public bool? cuSesiuniDeschise { get; set; } = null;
     }
 }

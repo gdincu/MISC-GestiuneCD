@@ -7,6 +7,7 @@ using GestiuneCD.Models.Entities;
 using GestiuneCD.Services.Interfaces;
 using System;
 using GestiuneCD.Models.DTOs;
+using GestiuneCD.Models;
 
 namespace GestiuneCD.Controllers
 {
@@ -45,12 +46,12 @@ namespace GestiuneCD.Controllers
 
         // PUT: api/Sesiuni/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutSesiune(int id, Sesiune sesiune)
+        [HttpPut("/InchideSesiune/{id}")]
+        public async Task<IActionResult> PutSesiune(int id)
         {
             try
             {
-                var result = await _sesiuneService.UpdateItemAsync(id, sesiune);
+                var result = await _sesiuneService.UpdateItemAsync(id);
                 return Ok(result);
             }
             catch (Exception e)
@@ -61,12 +62,12 @@ namespace GestiuneCD.Controllers
 
         // POST: api/Sesiuni
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Sesiune>> PostSesiune(SesiuneSetupDTO sesiune)
+        [HttpPost("/CreazaSesiune")]
+        public async Task<ActionResult<Sesiune>> PostSesiune(SesiuneSetupDTO sesiune,decimal? spatiuAditionalOcupat=0)
         {
             try
             {
-                var result = await _sesiuneService.CreateItemAsync(sesiune);
+                var result = await _sesiuneService.CreateItemAsync(sesiune,spatiuAditionalOcupat);
                 return Ok(result);
             }
             catch (Exception e)
@@ -88,6 +89,12 @@ namespace GestiuneCD.Controllers
             {
                 return NotFound(e.Message);
             }
+        }
+
+        [HttpGet("/InchideToateSesiunileDeschise")]
+        public async Task<ActionResult<Sesiune>> InchideSesiuni()
+        {
+            return Ok(await _sesiuneService.InchideSesiunileDeschise());
         }
     }
 }

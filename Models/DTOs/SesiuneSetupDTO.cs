@@ -1,5 +1,4 @@
-﻿using GestiuneCD.Models.Enums;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace GestiuneCD.Models.DTOs
 {
@@ -9,7 +8,5 @@ namespace GestiuneCD.Models.DTOs
         public int idCD { get; set; }
         [Required]
         public TipSesiune tipSesiune { get; set; }
-        [Required]
-        public StatusSesiune statusSesiune { get; set; }
     }
 }

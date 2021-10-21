@@ -7,10 +7,6 @@ using GestiuneCD.Persistence;
 using GestiuneCD.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GestiuneCD.Services
 {
@@ -23,35 +19,33 @@ namespace GestiuneCD.Services
             _context = context;
         }
 
-        public async Task<ActionResult<Sesiune>> CreateItemAsync(SesiuneSetupDTO entity)
+        public async Task<ActionResult<Sesiune>> CreateItemAsync(SesiuneSetupDTO entity,decimal? spatiuAditionalOcupat)
         {
-            if (_context.Sesiuni.Any(f => f.idCD == entity.idCD && f.statusSesiune.Equals(StatusSesiune.Deschis)) 
-                && entity.statusSesiune.Equals(StatusSesiune.Deschis)
-                                        )
-                throw new Exception("Exista deja o sesiune deschisa pentru acest CD");
-
-            bool sesiuneAditionala = !entity.tipSesiune.Equals(TipSesiune.Null);
+            if(!_context.CDs.Any(f => f.id == entity.idCD))
+                throw new Exception("Id-ul introdus nu exista in baza de date!");
             
-            CD tempCD = await _context.CDs.FirstOrDefaultAsync(f => f.id == entity.idCD);
+            //Daca exista sesiuni deschise pentru CD-ul ales si vrem sa deschidem o noua sesiune primim eroarea de mai jos
+            if (_context.Sesiuni.Any(f => f.idCD == entity.idCD && f.statusSesiune.Equals(StatusSesiune.Deschis)))
+                throw new Exception("Exista deja macar o sesiune deschisa pentru acest CD!");
 
-            //WIP
-            DateTime? dateTimeStart = entity.statusSesiune.Equals(StatusSesiune.Deschis) ? DateTime.Now : null;
+            if(entity.tipSesiune.Equals(TipSesiune.Scriere) && (!spatiuAditionalOcupat.HasValue || spatiuAditionalOcupat<=0))
+                throw new Exception("Spatiu aditional ocupat trebuie completat pentru acest tip de sesiune!");
 
-            //WIP
-            DateTime? dateTimeEnd = entity.statusSesiune.Equals(StatusSesiune.Inchis) ? DateTime.Now : null;
+            CD CDVizat = await _context.CDs.FirstOrDefaultAsync(f => f.id == entity.idCD);
 
-            Sesiune tempSesiune = new Sesiune(tempCD, entity.idCD, dateTimeStart, dateTimeEnd, entity.tipSesiune, entity.statusSesiune);
+            Sesiune sesiuneNoua = new Sesiune(CDVizat, entity.idCD, DateTime.Now, null, entity.tipSesiune, StatusSesiune.Deschis);
 
             try
             {
-                _context.Sesiuni.Add(tempSesiune);
+                //Adauga noua sesiune
+                _context.Sesiuni.Add(sesiuneNoua);
 
-                //Incrementeaza nr de sesiuni in functie de tipul de sesiune
-                if (sesiuneAditionala && entity.statusSesiune.Equals(StatusSesiune.Deschis)) { 
-                    CD newCD = tempCD;
-                    newCD.nrDeSesiuni++;
-                    _context.Entry(tempCD).CurrentValues.SetValues(newCD);
-                }
+                //Incrementeaza nr de sesiuni pentru CD-ul vizat
+                CD CDNou = CDVizat;
+                CDNou.nrDeSesiuni++;
+                //Adauga spatiul ocupat aditional unde este cazul (eg. tip sesiune = scriere)
+                CDNou.spatiuOcupat = (decimal)((sesiuneNoua.tipSesiune.Equals(TipSesiune.Scriere)) ? (CDNou.spatiuOcupat + spatiuAditionalOcupat) : CDNou.spatiuOcupat);
+                _context.Entry(CDVizat).CurrentValues.SetValues(CDNou);
 
                 await _context.SaveChangesAsync();
             }
@@ -60,7 +54,7 @@ namespace GestiuneCD.Services
                 throw;
             }
 
-            return tempSesiune;
+            return sesiuneNoua;
         }
 
         public async Task<ActionResult<Sesiune>> DeleteItemAsync(int id)
@@ -69,8 +63,24 @@ namespace GestiuneCD.Services
                 throw new Exception("Id-ul introdus nu exista in baza de date!");
 
             Sesiune tempSesiune = await _context.FindAsync<Sesiune>(id);
-            _context.Remove(tempSesiune);
-            await _context.SaveChangesAsync();
+
+            try {
+                //Sterge sesiune
+                _context.Remove(tempSesiune);
+
+                //Decrementeaza nr de sesiuni
+                CD CDVizat = await _context.CDs.FirstOrDefaultAsync(f => f.id == tempSesiune.idCD);
+                CD CDNou = CDVizat;
+                CDNou.nrDeSesiuni--;
+                _context.Entry(CDVizat).CurrentValues.SetValues(CDNou);
+
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw;
+            }
+
             return tempSesiune;
         }
 
@@ -87,13 +97,51 @@ namespace GestiuneCD.Services
             return await _context.Sesiuni.ToListAsync();
         }
 
-        public Task<ActionResult<Sesiune>> UpdateItemAsync(int id, Sesiune entity)
+        public async Task<ActionResult<Sesiune>> UpdateItemAsync(int id)
         {
-            throw new NotImplementedException();
+            if (!SesiuneaExista(id))
+                throw new Exception("Id-ul introdus nu exista in baza de date!");
+
+            Sesiune sesiuneVizata = await _context.Sesiuni.FirstOrDefaultAsync(f => f.id == id);
+
+            if(sesiuneVizata.statusSesiune.Equals(StatusSesiune.Inchis))
+                throw new Exception("Sesiunea vizata este deja inchisa!");
+
+            Sesiune sesiuneNoua = sesiuneVizata;
+            sesiuneNoua.statusSesiune = StatusSesiune.Inchis;
+            sesiuneNoua.endDateTime = DateTime.Now;
+            
+            try
+            {
+                _context.Entry(sesiuneVizata).CurrentValues.SetValues(sesiuneNoua);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw;
+            }
+
+            return sesiuneNoua;
         }
         private bool SesiuneaExista(int id)
         {
             return _context.Sesiuni.Any(e => e.id == id);
+        }
+
+        public async Task<IEnumerable<Sesiune>> InchideSesiunileDeschise()
+        {
+            List<Sesiune> sesiuniDeschise = _context.Sesiuni.Where(f => f.statusSesiune.Equals(StatusSesiune.Deschis)).ToList();
+
+            foreach (var item in sesiuniDeschise) {
+                Sesiune tempSesiune = item;
+                tempSesiune.statusSesiune = StatusSesiune.Inchis;
+                tempSesiune.endDateTime = DateTime.Now;
+                _context.Entry(item).CurrentValues.SetValues(tempSesiune);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return sesiuniDeschise;
         }
     }
 }

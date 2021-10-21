@@ -2,7 +2,6 @@
 {
     public enum TipSesiune
     {
-        Null,
         Citire,
         Scriere
     }
