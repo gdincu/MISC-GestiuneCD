@@ -52,34 +52,51 @@ namespace GestiuneCD.Persistence
             return await _context.FindAsync<CD>(id);
         }
 
-        public async Task<IEnumerable<CD>> GetItemsAsync(bool? orderedByName = false, int? minSpatiuLiber = 0, VitezaInscriptionare? vitezaDeInscriptionare = null, TipCD? tipCD = null, bool? cuSesiuniDeschise = null)
+        public async Task<IEnumerable<CD>> GetItemsAsync(bool? orderedByName = false, bool? orderedBySize = false, int? minSpatiuLiber = 0, VitezaInscriptionare? vitezaDeInscriptionare = null, TipCD? tipCD = null, bool? cuSesiuniDeschise = null)
         {
+            //Lista initiala de CD-uri ce trebuie filtrata
             IQueryable<CD> result = _context.CDs;
 
             if (orderedByName == true)
                 result = result.OrderBy(f => f.nume);
 
+            if (orderedBySize == true)
+                result = result.OrderBy(f => f.dimensiuneMB);
+
             if (minSpatiuLiber > 0)
                 result = result.Where(f => (f.dimensiuneMB - f.spatiuOcupat) >= minSpatiuLiber);
 
-            if (vitezaDeInscriptionare != null)
+            if (vitezaDeInscriptionare is not null)
                 result = result.Where(f => f.vitezaMaxInscriptionare.Equals(vitezaDeInscriptionare));
 
-            if (tipCD != null)
+            if (tipCD is not null)
                 result = result.Where(f => f.tip == tipCD);
 
-            if (cuSesiuniDeschise != null && cuSesiuniDeschise == true)
-            {
-                var listaSesiuniDeschise = _context.Sesiuni.Where(f => f.statusSesiune.Equals(StatusSesiune.Deschis));
-                
-                List<int> listaDeIDuri = new();
-                foreach (var item in listaSesiuniDeschise)
-                    listaDeIDuri.Add(item.idCD);
-
-                result = result.Where(f => listaDeIDuri.Contains(f.id));
+            switch(cuSesiuniDeschise) {
+                case true:
+                    result = IntoarceCDuriInFunctieDeSesiunileDeschise(result,StatusSesiune.Deschis);
+                    break;
+                case false:
+                    result = IntoarceCDuriInFunctieDeSesiunileDeschise(result,StatusSesiune.Inchis);
+                    break;
+                default:
+                    break;
             }
 
             return await result.ToListAsync();
+        }
+
+        //Filtreaza o lista cu CD-uri pentru a mentine doar CD-urile cu sesiuni deschise sau nu in functie de statusSesiune primit
+        private IQueryable<CD> IntoarceCDuriInFunctieDeSesiunileDeschise(IQueryable<CD> initialList,StatusSesiune statusSesiune)
+        {
+            var listaSesiuniDeschise = _context.Sesiuni
+                .Where(f => f.statusSesiune.Equals(StatusSesiune.Deschis))
+                .Select(f => f.idCD);
+
+            if(statusSesiune.Equals(StatusSesiune.Deschis))
+                return initialList.Where(f => listaSesiuniDeschise.Contains(f.id));
+            else
+                return initialList.Where(f => !listaSesiuniDeschise.Contains(f.id));
         }
 
         public async Task<ActionResult<CD>> UpdateItemAsync(int id, CDUpdateDTO entity)
@@ -110,36 +127,6 @@ namespace GestiuneCD.Persistence
             }
 
             return tempCD;
-        }
-
-        public async Task<IEnumerable<CD>> OrderBySize(string? orderType)
-        {
-            List<CD> OrderedList = new List<CD>();
-
-            switch (orderType)
-            {
-                case "ASC":
-                    OrderedList = _context.CDs.OrderBy(f => f.dimensiuneMB).ToList();
-                    break;
-
-                case "DESC":
-                    OrderedList = _context.CDs.OrderByDescending(f => f.dimensiuneMB).ToList();
-                    break;
-
-                default:
-                    OrderedList = _context.CDs.ToList();
-                    break;
-            }
-
-            foreach (var item in _context.CDs)
-                _context.CDs.Remove(item);
-
-            foreach (var item in OrderedList)
-                _context.CDs.Add(new CD(item.nume, item.dimensiuneMB, item.vitezaMaxInscriptionare, item.tip, item.spatiuOcupat, item.nrDeSesiuni));
-
-            await _context.SaveChangesAsync();
-
-            return await _context.CDs.ToListAsync();
         }
 
         private bool CDExists(int id)

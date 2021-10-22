@@ -32,7 +32,7 @@ namespace GestiuneCD.Controllers
                 throw new ArgumentNullException(nameof(parameters));
             }
 
-            return Ok(await _cDsService.GetItemsAsync(parameters.orderedByName, parameters.minSpatiuLiber,parameters.vitezaMaxInscriptionare,parameters.tipCD,parameters.cuSesiuniDeschise));
+            return Ok(await _cDsService.GetItemsAsync(parameters.orderedByName, parameters.orderedBySize, parameters.minSpatiuLiber,parameters.vitezaMaxInscriptionare,parameters.tipCD,parameters.cuSesiuniDeschise));
         }
 
         /// <summary>
@@ -81,16 +81,6 @@ namespace GestiuneCD.Controllers
         public async Task<ActionResult<CD>> PostCD(CDSetupDTO cDSetupDTO)
         {
             return Ok(await _cDsService.CreateItemAsync(cDSetupDTO));
-        }
-
-        /// <summary>
-        /// Ordoneaza CD-urile dupa dimensiunea lor in Mb.
-        /// </summary>
-        // POST: Order api/CDs
-        [HttpPost("/OrderBySize")]
-        public async Task<ActionResult<IEnumerable<CD>>> OrderBySize(string? orderMethod = "ASC")
-        {
-           return Ok(await _cDsService.OrderBySize(orderMethod));
         }
 
         /// <summary>

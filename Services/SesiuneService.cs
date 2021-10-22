@@ -28,7 +28,7 @@ namespace GestiuneCD.Services
             if (_context.Sesiuni.Any(f => f.idCD == entity.idCD && f.statusSesiune.Equals(StatusSesiune.Deschis)))
                 throw new Exception("Exista deja macar o sesiune deschisa pentru acest CD!");
 
-            if(entity.tipSesiune.Equals(TipSesiune.Scriere) && (!spatiuAditionalOcupat.HasValue || spatiuAditionalOcupat<=0))
+            if (entity.tipSesiune.Equals(TipSesiune.Scriere) && (!spatiuAditionalOcupat.HasValue || spatiuAditionalOcupat<=0))
                 throw new Exception("Spatiu aditional ocupat trebuie completat pentru acest tip de sesiune!");
 
             if(entity.tipSesiune.Equals(TipSesiune.Scriere) && (entity.vitezaInscriptionare == null))
@@ -36,8 +36,15 @@ namespace GestiuneCD.Services
 
             CD CDVizat = await _context.CDs.FirstOrDefaultAsync(f => f.id == entity.idCD);
 
-            if(entity.vitezaInscriptionare > CDVizat.vitezaMaxInscriptionare)
+            //Un CD ce nu este CD-RW nu se poate scrie de mai multe ori
+            if (entity.tipSesiune.Equals(TipSesiune.Scriere) && (!CDVizat.tip.Equals(TipCD.CDRW)))
+                throw new Exception("Doar CD-urile de tip CD-RW se pot rescrie!");
+
+            if (entity.vitezaInscriptionare > CDVizat.vitezaMaxInscriptionare)
                 throw new Exception("Viteza de inscriptionare nu poate depasi viteza maxima a CD-ului!");
+
+            if(entity.tipSesiune.Equals(TipSesiune.Scriere) && (spatiuAditionalOcupat > (CDVizat.dimensiuneMB - CDVizat.spatiuOcupat)))
+                throw new Exception("Memorie insuficienta! CD-ul mai are doar " + (CDVizat.dimensiuneMB - CDVizat.spatiuOcupat) + " Mb liberi!");
 
             VitezaInscriptionare? vitezaInscriptionare = null;
             if (entity.tipSesiune.Equals(TipSesiune.Scriere))
