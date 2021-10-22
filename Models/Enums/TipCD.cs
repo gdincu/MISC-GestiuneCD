@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace GestiuneCD.Domain
+﻿namespace GestiuneCD.Domain
 {
     public enum TipCD
     {

@@ -1,5 +1,6 @@
 ﻿using GestiuneCD.Domain;
 using GestiuneCD.Models;
+using GestiuneCD.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace GestiuneCD.Persistence
@@ -41,7 +42,7 @@ namespace GestiuneCD.Persistence
                             nrDeSesiuni = 0,
                             dimensiuneMB = 700,
                             spatiuOcupat = 100,
-                            vitezaDeInscriptionare = 11
+                            vitezaMaxInscriptionare = VitezaInscriptionare.x4
                         };
                         context.CDs.Add(adminUser);
                     }

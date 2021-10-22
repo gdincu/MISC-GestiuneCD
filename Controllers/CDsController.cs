@@ -32,7 +32,7 @@ namespace GestiuneCD.Controllers
                 throw new ArgumentNullException(nameof(parameters));
             }
 
-            return Ok(await _cDsService.GetItemsAsync(parameters.orderedByName, parameters.minSpatiuLiber,parameters.vitezaDeInscriptionare,parameters.tipCD,parameters.cuSesiuniDeschise));
+            return Ok(await _cDsService.GetItemsAsync(parameters.orderedByName, parameters.minSpatiuLiber,parameters.vitezaMaxInscriptionare,parameters.tipCD,parameters.cuSesiuniDeschise));
         }
 
         /// <summary>

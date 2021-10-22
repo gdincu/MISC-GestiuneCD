@@ -1,4 +1,5 @@
 ﻿using GestiuneCD.Domain;
+using GestiuneCD.Models.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -10,10 +11,9 @@ namespace GestiuneCD.Models
         [StringLength(50, MinimumLength = 3,
         ErrorMessage = "Numele trebuie sa contina minim 3 caractere si maxim 50 de caractere")]
         [DataType(DataType.Text)]
-        public string nume { get; set; }
+        public string? nume { get; set; }
         [Required(ErrorMessage = "{0} este obligatorie")]
-        [Range(0, int.MaxValue, ErrorMessage = "{0} poate fi doar un numar intreg pozitiv")]
-        public int vitezaDeInscriptionare { get; set; }
+        public VitezaInscriptionare vitezaMaxInscriptionare { get; set; }
         [Required]
         public TipCD tip { get; set; }
         [Required]

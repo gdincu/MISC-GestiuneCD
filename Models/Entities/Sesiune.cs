@@ -10,7 +10,7 @@ namespace GestiuneCD.Models.Entities
         {
         }
 
-        public Sesiune(CD cd, int idCD, DateTime? startDateTime, DateTime? endDateTime, TipSesiune tipSesiune, StatusSesiune statusSesiune)
+        public Sesiune(CD cd, int idCD, DateTime? startDateTime, DateTime? endDateTime, TipSesiune tipSesiune, VitezaInscriptionare? vitezaInscriptionare, StatusSesiune statusSesiune)
         {
             this.cd = cd;
             this.idCD = idCD;
@@ -18,6 +18,7 @@ namespace GestiuneCD.Models.Entities
             this.endDateTime = endDateTime;
             this.tipSesiune = tipSesiune;
             this.statusSesiune = statusSesiune;
+            this.VitezaInscriptionare = vitezaInscriptionare;
         }
 
         public CD cd { get; set; }
@@ -26,6 +27,7 @@ namespace GestiuneCD.Models.Entities
         public DateTime? endDateTime { get; set; } = null;
         public TipSesiune tipSesiune { get;set; }
         public StatusSesiune statusSesiune { get; set; }
+        public VitezaInscriptionare? VitezaInscriptionare { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
 ﻿using GestiuneCD.Domain;
+using GestiuneCD.Models.Enums;
 
 namespace GestiuneCD.Models.Specifications
 {
@@ -6,7 +7,7 @@ namespace GestiuneCD.Models.Specifications
     {
         public bool? orderedByName { get; set; } = false;
         public int? minSpatiuLiber { get; set; } = 0;
-        public int? vitezaDeInscriptionare { get; set; } = 0;
+        public VitezaInscriptionare? vitezaMaxInscriptionare { get; set; } = null;
         public TipCD? tipCD { get; set; } = null;
         public bool? cuSesiuniDeschise { get; set; } = null;
     }

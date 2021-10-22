@@ -26,7 +26,7 @@ namespace GestiuneCD.Persistence
             if (entity.spatiuOcupat > dimensiuneMB)
                 throw new Exception("Spatiul ocupat nu poate depasi capacitatea acestui tip de CD!");
 
-            CD tempCD = new CD(entity.nume, dimensiuneMB, entity.vitezaDeInscriptionare, entity.tip, entity.spatiuOcupat, 0);
+            CD tempCD = new CD(entity.nume, dimensiuneMB, entity.vitezaMaxInscriptionare, entity.tip, entity.spatiuOcupat, 0);
 
             _context.CDs.Add(tempCD);
             await _context.SaveChangesAsync();
@@ -52,7 +52,7 @@ namespace GestiuneCD.Persistence
             return await _context.FindAsync<CD>(id);
         }
 
-        public async Task<IEnumerable<CD>> GetItemsAsync(bool? orderedByName = false, int? minSpatiuLiber = 0, int? vitezaDeInscriptionare = 0, TipCD? tipCD = null, bool? cuSesiuniDeschise = null)
+        public async Task<IEnumerable<CD>> GetItemsAsync(bool? orderedByName = false, int? minSpatiuLiber = 0, VitezaInscriptionare? vitezaDeInscriptionare = null, TipCD? tipCD = null, bool? cuSesiuniDeschise = null)
         {
             IQueryable<CD> result = _context.CDs;
 
@@ -62,8 +62,8 @@ namespace GestiuneCD.Persistence
             if (minSpatiuLiber > 0)
                 result = result.Where(f => (f.dimensiuneMB - f.spatiuOcupat) >= minSpatiuLiber);
 
-            if (vitezaDeInscriptionare > 0)
-                result = result.Where(f => f.vitezaDeInscriptionare == vitezaDeInscriptionare);
+            if (vitezaDeInscriptionare != null)
+                result = result.Where(f => f.vitezaMaxInscriptionare.Equals(vitezaDeInscriptionare));
 
             if (tipCD != null)
                 result = result.Where(f => f.tip == tipCD);
@@ -91,7 +91,7 @@ namespace GestiuneCD.Persistence
 
             CD tempCD = new CD(entity.nume,
                                 retrievedCD.dimensiuneMB,
-                                entity.vitezaDeInscriptionare,
+                                entity.vitezaMaxInscriptionare,
                                 retrievedCD.tip,
                                 retrievedCD.spatiuOcupat,
                                 retrievedCD.nrDeSesiuni
@@ -135,7 +135,7 @@ namespace GestiuneCD.Persistence
                 _context.CDs.Remove(item);
 
             foreach (var item in OrderedList)
-                _context.CDs.Add(new CD(item.nume, item.dimensiuneMB, item.vitezaDeInscriptionare, item.tip, item.spatiuOcupat, item.nrDeSesiuni));
+                _context.CDs.Add(new CD(item.nume, item.dimensiuneMB, item.vitezaMaxInscriptionare, item.tip, item.spatiuOcupat, item.nrDeSesiuni));
 
             await _context.SaveChangesAsync();
 

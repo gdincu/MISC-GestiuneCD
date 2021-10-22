@@ -31,9 +31,19 @@ namespace GestiuneCD.Services
             if(entity.tipSesiune.Equals(TipSesiune.Scriere) && (!spatiuAditionalOcupat.HasValue || spatiuAditionalOcupat<=0))
                 throw new Exception("Spatiu aditional ocupat trebuie completat pentru acest tip de sesiune!");
 
+            if(entity.tipSesiune.Equals(TipSesiune.Scriere) && (entity.vitezaInscriptionare == null))
+                throw new Exception("O viteza de inscriptionare trebuie completata pentru acest tip de sesiune!");
+
             CD CDVizat = await _context.CDs.FirstOrDefaultAsync(f => f.id == entity.idCD);
 
-            Sesiune sesiuneNoua = new Sesiune(CDVizat, entity.idCD, DateTime.Now, null, entity.tipSesiune, StatusSesiune.Deschis);
+            if(entity.vitezaInscriptionare > CDVizat.vitezaMaxInscriptionare)
+                throw new Exception("Viteza de inscriptionare nu poate depasi viteza maxima a CD-ului!");
+
+            VitezaInscriptionare? vitezaInscriptionare = null;
+            if (entity.tipSesiune.Equals(TipSesiune.Scriere))
+                vitezaInscriptionare = entity.vitezaInscriptionare;
+
+            Sesiune sesiuneNoua = new Sesiune(CDVizat, entity.idCD, DateTime.Now, null, entity.tipSesiune, vitezaInscriptionare,StatusSesiune.Deschis);
 
             try
             {

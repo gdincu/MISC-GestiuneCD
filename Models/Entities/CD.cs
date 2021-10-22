@@ -1,4 +1,4 @@
-﻿using GestiuneCD.Models;
+﻿using GestiuneCD.Models.Enums;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,7 +9,7 @@ namespace GestiuneCD.Domain
 
         public string nume { get; set; }
         public int dimensiuneMB { get; set; }
-        public int vitezaDeInscriptionare { get; set; }
+        public VitezaInscriptionare vitezaMaxInscriptionare { get; set; }
         public TipCD tip { get; set; }
         [Column(TypeName = "decimal(18,4)")]
         public decimal spatiuOcupat { get; set; }
@@ -19,11 +19,11 @@ namespace GestiuneCD.Domain
         {
         }
 
-        public CD(string nume, int dimensiuneMB, int vitezaDeInscriptionare, TipCD tip, decimal spatiuOcupat, int nrDeSesiuni)
+        public CD(string nume, int dimensiuneMB, VitezaInscriptionare vitezaMaxInscriptionare, TipCD tip, decimal spatiuOcupat, int nrDeSesiuni)
         {
             this.nume = nume;
             this.dimensiuneMB = dimensiuneMB;
-            this.vitezaDeInscriptionare = vitezaDeInscriptionare;
+            this.vitezaMaxInscriptionare = vitezaMaxInscriptionare;
             this.tip = tip;
             this.spatiuOcupat = spatiuOcupat;
             this.nrDeSesiuni = nrDeSesiuni;
