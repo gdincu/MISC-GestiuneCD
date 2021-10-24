@@ -1,6 +1,4 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models;
-using GestiuneCD.Models.DTOs;
+﻿using GestiuneCD.Models.DTOs;
 using GestiuneCD.Models.Entities;
 using GestiuneCD.Models.Enums;
 using GestiuneCD.Persistence;
@@ -50,7 +48,7 @@ namespace GestiuneCD.Services
             if (entity.tipSesiune.Equals(TipSesiune.Scriere))
                 vitezaInscriptionare = entity.vitezaInscriptionare;
 
-            Sesiune sesiuneNoua = new Sesiune(CDVizat, entity.idCD, DateTime.Now, null, entity.tipSesiune, vitezaInscriptionare,StatusSesiune.Deschis);
+            Sesiune sesiuneNoua = new(CDVizat, entity.idCD, DateTime.Now, null, entity.tipSesiune, vitezaInscriptionare,StatusSesiune.Deschis);
 
             try
             {

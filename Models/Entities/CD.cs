@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GestiuneCD.Domain
+namespace GestiuneCD.Models.Entities
 {
     public class CD : BaseEntity
     {

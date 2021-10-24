@@ -1,5 +1,4 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models.Enums;
+﻿using GestiuneCD.Models.Enums;
 
 namespace GestiuneCD.Models.Specifications
 {

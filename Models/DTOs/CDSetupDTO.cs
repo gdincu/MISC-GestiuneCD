@@ -1,9 +1,8 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models.Enums;
+﻿using GestiuneCD.Models.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GestiuneCD.Models
+namespace GestiuneCD.Models.DTOs
 {
     public class CDSetupDTO
     {

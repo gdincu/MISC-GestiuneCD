@@ -1,4 +1,4 @@
-﻿using GestiuneCD.Domain;
+﻿using GestiuneCD.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

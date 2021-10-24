@@ -1,14 +1,12 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models;
+﻿using GestiuneCD.Models.DTOs;
+using GestiuneCD.Models.Entities;
 using GestiuneCD.Models.Enums;
+using GestiuneCD.Persistence;
+using GestiuneCD.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace GestiuneCD.Persistence
+namespace GestiuneCD.Services
 {
     public class CDService : ICDService<CD>
     {
@@ -26,7 +24,7 @@ namespace GestiuneCD.Persistence
             if (entity.spatiuOcupat > dimensiuneMB)
                 throw new Exception("Spatiul ocupat nu poate depasi capacitatea acestui tip de CD!");
 
-            CD tempCD = new CD(entity.nume, dimensiuneMB, entity.vitezaMaxInscriptionare, entity.tip, entity.spatiuOcupat, 0);
+            CD tempCD = new(entity.nume, dimensiuneMB, entity.vitezaMaxInscriptionare, entity.tip, entity.spatiuOcupat, 0);
 
             _context.CDs.Add(tempCD);
             await _context.SaveChangesAsync();
@@ -106,7 +104,7 @@ namespace GestiuneCD.Persistence
 
             CD retrievedCD = await _context.CDs.FirstOrDefaultAsync(f => f.id == id);
 
-            CD tempCD = new CD(entity.nume,
+            CD tempCD = new(entity.nume,
                                 retrievedCD.dimensiuneMB,
                                 entity.vitezaMaxInscriptionare,
                                 retrievedCD.tip,

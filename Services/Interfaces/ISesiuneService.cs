@@ -1,5 +1,5 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models.DTOs;
+﻿using GestiuneCD.Models.DTOs;
+using GestiuneCD.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestiuneCD.Services.Interfaces

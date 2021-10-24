@@ -1,9 +1,9 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models;
+﻿using GestiuneCD.Models.DTOs;
+using GestiuneCD.Models.Entities;
 using GestiuneCD.Models.Enums;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GestiuneCD.Persistence
+namespace GestiuneCD.Services.Interfaces
 {
     public interface ICDService<T> where T : BaseEntity
     {

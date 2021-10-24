@@ -1,7 +1,5 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models.Entities;
+﻿using GestiuneCD.Models.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Web.Administration;
 using System.Reflection;
 
 namespace GestiuneCD.Persistence

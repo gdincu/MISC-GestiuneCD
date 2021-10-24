@@ -1,5 +1,4 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models;
+﻿using GestiuneCD.Models.Entities;
 using GestiuneCD.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,40 +15,32 @@ namespace GestiuneCD.Persistence
 
         public void Initialize()
         {
-            using (var serviceScope = _scopeFactory.CreateScope())
-            {
-                using (var context = serviceScope.ServiceProvider.GetService<AppDbContext>())
-                {
-                    context.Database.Migrate();
-                }
-            }
+            using var serviceScope = _scopeFactory.CreateScope();
+            using var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
+            context.Database.Migrate();
         }
 
         public void SeedData()
         {
-            using (var serviceScope = _scopeFactory.CreateScope())
+            using var serviceScope = _scopeFactory.CreateScope();
+            using var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
+
+            //add admin user
+            if (!context.CDs.Any())
             {
-                using (var context = serviceScope.ServiceProvider.GetService<AppDbContext>())
+                var adminUser = new CD
                 {
-
-                    //add admin user
-                    if (!context.CDs.Any())
-                    {
-                        var adminUser = new CD
-                        {
-                            nume = "Test1",
-                            tip = TipCD.CDRW,
-                            nrDeSesiuni = 0,
-                            dimensiuneMB = 700,
-                            spatiuOcupat = 100,
-                            vitezaMaxInscriptionare = VitezaInscriptionare.x4
-                        };
-                        context.CDs.Add(adminUser);
-                    }
-
-                    context.SaveChanges();
-                }
+                    nume = "Test1",
+                    tip = TipCD.CDRW,
+                    nrDeSesiuni = 0,
+                    dimensiuneMB = 700,
+                    spatiuOcupat = 100,
+                    vitezaMaxInscriptionare = VitezaInscriptionare.x4
+                };
+                context.CDs.Add(adminUser);
             }
+
+            context.SaveChanges();
         }
     }
 }

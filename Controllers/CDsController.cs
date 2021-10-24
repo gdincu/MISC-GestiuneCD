@@ -1,17 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using GestiuneCD.Domain;
-using GestiuneCD.Persistence;
-using GestiuneCD.Models;
 using GestiuneCD.Models.Specifications;
-using System;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+using GestiuneCD.Services.Interfaces;
+using GestiuneCD.Models.Entities;
+using GestiuneCD.Models.DTOs;
 
 namespace GestiuneCD.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class CDsController : ControllerBase
+    public class CDsController : BaseApiController
     {
         private readonly ICDService<CD> _cDsService;
 

@@ -1,4 +1,4 @@
-﻿namespace GestiuneCD.Models
+﻿namespace GestiuneCD.Models.Enums
 {
     public enum TipSesiune
     {

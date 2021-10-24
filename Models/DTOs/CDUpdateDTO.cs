@@ -1,7 +1,7 @@
 ﻿using GestiuneCD.Models.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace GestiuneCD.Models
+namespace GestiuneCD.Models.DTOs
 {
     public class CDUpdateDTO
     {

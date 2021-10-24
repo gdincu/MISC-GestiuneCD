@@ -11,9 +11,7 @@ using GestiuneCD.Models;
 
 namespace GestiuneCD.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class SesiuniController : ControllerBase
+    public class SesiuniController : BaseApiController
     {
         private readonly ISesiuneService<Sesiune> _sesiuneService;
 
@@ -22,7 +20,7 @@ namespace GestiuneCD.Controllers
             _sesiuneService = sesiuneService;
         }
 
-        // GET: api/Sesiuni
+        // GET: Sesiuni
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Sesiune>>> GetSesiuni()
         {

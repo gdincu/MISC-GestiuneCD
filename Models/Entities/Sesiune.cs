@@ -1,6 +1,4 @@
-﻿using GestiuneCD.Domain;
-using GestiuneCD.Models.Enums;
-using System.ComponentModel.DataAnnotations;
+﻿using GestiuneCD.Models.Enums;
 
 namespace GestiuneCD.Models.Entities
 {

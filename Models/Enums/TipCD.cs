@@ -1,4 +1,4 @@
-﻿namespace GestiuneCD.Domain
+﻿namespace GestiuneCD.Models.Enums
 {
     public enum TipCD
     {
