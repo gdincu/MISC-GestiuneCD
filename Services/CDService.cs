@@ -19,12 +19,12 @@ namespace GestiuneCD.Services
 
         public async Task<ActionResult<CD>> CreateItemAsync(CDSetupDTO entity)
         {
-            int dimensiuneMB = (entity.tip == TipCD.CDDA) ? 804 : 700;
+            int dimensiuneMB = (entity.Tip == TipCD.CDDA) ? 804 : 700;
 
-            if (entity.spatiuOcupat > dimensiuneMB)
+            if (entity.SpatiuOcupat > dimensiuneMB)
                 throw new Exception("Spatiul ocupat nu poate depasi capacitatea acestui tip de CD!");
 
-            CD tempCD = new(entity.nume, dimensiuneMB, entity.vitezaMaxInscriptionare, entity.tip, entity.spatiuOcupat, 0);
+            CD tempCD = new(entity.Nume, dimensiuneMB, entity.VitezaMaxInscriptionare, entity.Tip, entity.SpatiuOcupat, 0);
 
             _context.CDs.Add(tempCD);
             await _context.SaveChangesAsync();
@@ -56,19 +56,19 @@ namespace GestiuneCD.Services
             IQueryable<CD> result = _context.CDs;
 
             if (orderedByName == true)
-                result = result.OrderBy(f => f.nume);
+                result = result.OrderBy(f => f.Nume);
 
             if (orderedBySize == true)
-                result = result.OrderBy(f => f.dimensiuneMB);
+                result = result.OrderBy(f => f.DimensiuneMB);
 
             if (minSpatiuLiber > 0)
-                result = result.Where(f => (f.dimensiuneMB - f.spatiuOcupat) >= minSpatiuLiber);
+                result = result.Where(f => (f.DimensiuneMB - f.SpatiuOcupat) >= minSpatiuLiber);
 
             if (vitezaDeInscriptionare is not null)
-                result = result.Where(f => f.vitezaMaxInscriptionare.Equals(vitezaDeInscriptionare));
+                result = result.Where(f => f.VitezaMaxInscriptionare.Equals(vitezaDeInscriptionare));
 
             if (tipCD is not null)
-                result = result.Where(f => f.tip == tipCD);
+                result = result.Where(f => f.Tip == tipCD);
 
             switch(cuSesiuniDeschise) {
                 case true:
@@ -88,13 +88,13 @@ namespace GestiuneCD.Services
         private IQueryable<CD> IntoarceCDuriInFunctieDeSesiunileDeschise(IQueryable<CD> initialList,StatusSesiune statusSesiune)
         {
             var listaSesiuniDeschise = _context.Sesiuni
-                .Where(f => f.statusSesiune.Equals(StatusSesiune.Deschis))
-                .Select(f => f.idCD);
+                .Where(f => f.StatusSesiune.Equals(StatusSesiune.Deschis))
+                .Select(f => f.IdCD);
 
             if(statusSesiune.Equals(StatusSesiune.Deschis))
-                return initialList.Where(f => listaSesiuniDeschise.Contains(f.id));
+                return initialList.Where(f => listaSesiuniDeschise.Contains(f.ID));
             else
-                return initialList.Where(f => !listaSesiuniDeschise.Contains(f.id));
+                return initialList.Where(f => !listaSesiuniDeschise.Contains(f.ID));
         }
 
         public async Task<ActionResult<CD>> UpdateItemAsync(int id, CDUpdateDTO entity)
@@ -102,16 +102,16 @@ namespace GestiuneCD.Services
             if (!CDExists(id))
                 throw new Exception("Id-ul introdus nu exista in baza de date!");
 
-            CD retrievedCD = await _context.CDs.FirstOrDefaultAsync(f => f.id == id);
+            CD retrievedCD = await _context.CDs.FirstOrDefaultAsync(f => f.ID == id);
 
-            CD tempCD = new(entity.nume,
-                                retrievedCD.dimensiuneMB,
-                                entity.vitezaMaxInscriptionare,
-                                retrievedCD.tip,
-                                retrievedCD.spatiuOcupat,
-                                retrievedCD.nrDeSesiuni
+            CD tempCD = new(entity.Nume,
+                                retrievedCD.DimensiuneMB,
+                                entity.VitezaMaxInscriptionare,
+                                retrievedCD.Tip,
+                                retrievedCD.SpatiuOcupat,
+                                retrievedCD.NrDeSesiuni
                                 );
-            tempCD.id = id;
+            tempCD.ID = id;
 
             _context.Entry(retrievedCD).CurrentValues.SetValues(tempCD);
 
@@ -129,7 +129,7 @@ namespace GestiuneCD.Services
 
         private bool CDExists(int id)
         {
-            return _context.CDs.Any(e => e.id == id);
+            return _context.CDs.Any(e => e.ID == id);
         }
     }
 }

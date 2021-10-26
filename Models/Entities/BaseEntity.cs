@@ -1,7 +1,13 @@
 ﻿namespace GestiuneCD.Models.Entities
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class BaseEntity
     {
-        public int id { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public int ID { get; set; }
     }
 }

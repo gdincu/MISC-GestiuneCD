@@ -8,9 +8,9 @@ namespace GestiuneCD.Persistence.Config
     {
         public void Configure(EntityTypeBuilder<CD> builder)
         {
-            builder.Property(p => p.nume).IsRequired().HasMaxLength(100);
-            builder.Property(p => p.tip).IsRequired().HasColumnType("TINYINT");
-            builder.Property(p => p.dimensiuneMB).IsRequired().HasColumnType("smallint");
+            builder.Property(p => p.Nume).IsRequired().HasMaxLength(100);
+            builder.Property(p => p.Tip).IsRequired().HasColumnType("TINYINT");
+            builder.Property(p => p.DimensiuneMB).IsRequired().HasColumnType("smallint");
         }
     }
 }

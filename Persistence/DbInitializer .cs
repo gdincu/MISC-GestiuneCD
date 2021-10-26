@@ -30,12 +30,12 @@ namespace GestiuneCD.Persistence
             {
                 var adminUser = new CD
                 {
-                    nume = "Test1",
-                    tip = TipCD.CDRW,
-                    nrDeSesiuni = 0,
-                    dimensiuneMB = 700,
-                    spatiuOcupat = 100,
-                    vitezaMaxInscriptionare = VitezaInscriptionare.x4
+                    Nume = "Test1",
+                    Tip = TipCD.CDRW,
+                    NrDeSesiuni = 0,
+                    DimensiuneMB = 700,
+                    SpatiuOcupat = 100,
+                    VitezaMaxInscriptionare = VitezaInscriptionare.x4
                 };
                 context.CDs.Add(adminUser);
             }

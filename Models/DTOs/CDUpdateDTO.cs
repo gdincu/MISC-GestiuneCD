@@ -3,11 +3,20 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GestiuneCD.Models.DTOs
 {
+    /// <summary>
+    ///     
+    /// </summary>
     public class CDUpdateDTO
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [Required]
-        public string? nume { get; set; }
+        public string? Nume { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         [Required]
-        public VitezaInscriptionare vitezaMaxInscriptionare { get; set; }
+        public VitezaInscriptionare VitezaMaxInscriptionare { get; set; }
     }
 }

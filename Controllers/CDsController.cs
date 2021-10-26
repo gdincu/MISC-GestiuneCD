@@ -27,7 +27,7 @@ namespace GestiuneCD.Controllers
                 throw new ArgumentNullException(nameof(parameters));
             }
 
-            return Ok(await _cDsService.GetItemsAsync(parameters.orderedByName, parameters.orderedBySize, parameters.minSpatiuLiber,parameters.vitezaMaxInscriptionare,parameters.tipCD,parameters.cuSesiuniDeschise));
+            return Ok(await _cDsService.GetItemsAsync(parameters.OrderedByName, parameters.OrderedBySize, parameters.MinSpatiuLiber, parameters.VitezaMaxInscriptionare, parameters.TipCD, parameters.CuSesiuniDeschise));
         }
 
         /// <summary>

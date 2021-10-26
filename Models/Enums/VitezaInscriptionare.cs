@@ -1,5 +1,8 @@
 ﻿namespace GestiuneCD.Models.Enums
 {
+    /// <summary>
+    /// VitezaInscriptionare enum
+    /// </summary>
     public enum VitezaInscriptionare
     {
         x4,

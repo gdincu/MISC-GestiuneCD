@@ -8,12 +8,12 @@ namespace GestiuneCD.Persistence.Config
     {
         public void Configure(EntityTypeBuilder<Sesiune> builder)
         {
-            builder.Property(p => p.tipSesiune).IsRequired().HasColumnType("TINYINT");
-            builder.Property(p => p.idCD).IsRequired();
-            builder.Property(p => p.startDateTime).HasColumnType("DATETIME");
-            builder.Property(p => p.endDateTime).HasColumnType("DATETIME");
-            builder.HasOne(b => b.cd).WithMany()
-                .HasForeignKey(p => p.idCD);
+            builder.Property(p => p.TipSesiune).IsRequired().HasColumnType("TINYINT");
+            builder.Property(p => p.IdCD).IsRequired();
+            builder.Property(p => p.StartDateTime).HasColumnType("DATETIME");
+            builder.Property(p => p.EndDateTime).HasColumnType("DATETIME");
+            builder.HasOne(b => b.Cd).WithMany()
+                .HasForeignKey(p => p.IdCD);
         }
     }
 }
