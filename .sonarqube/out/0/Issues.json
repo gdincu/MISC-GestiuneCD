@@ -1,0 +1,4450 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.0.0.0",
+        "fileVersion": "4.0.0-5.21501.19 (8e1779e1)",
+        "semanticVersion": "4.0.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 62,
+                  "endLine": 5,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 85,
+                  "endLine": 5,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiResponse.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 61,
+                  "endLine": 5,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Program.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 21,
+                  "endLine": 29,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Program.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 26,
+                  "endLine": 30,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Program.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 5,
+                  "endLine": 85,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 26,
+                  "endLine": 35,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 67,
+                  "endLine": 38,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 47,
+                  "endLine": 41,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8629",
+          "level": "warning",
+          "message": "Nullable value type may be null.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 38,
+                  "endLine": 62,
+                  "endColumn": 168
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 35,
+                  "endLine": 80,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8634",
+          "level": "warning",
+          "message": "The type 'GestiuneCD.Models.Entities.Sesiune?' cannot be used as type parameter 'TEntity' in the generic type or method 'DbContext.Remove<TEntity>(TEntity)'. Nullability of type argument 'GestiuneCD.Models.Entities.Sesiune?' doesn't match 'class' constraint.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 17,
+                  "endLine": 84,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 82,
+                  "endLine": 87,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 30,
+                  "endLine": 87,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 28,
+                  "endLine": 88,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 17,
+                  "endLine": 89,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8634",
+          "level": "warning",
+          "message": "The type 'GestiuneCD.Models.Entities.CD?' cannot be used as type parameter 'TEntity' in the generic type or method 'DbContext.Entry<TEntity>(TEntity)'. Nullability of type argument 'GestiuneCD.Models.Entities.CD?' doesn't match 'class' constraint.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 17,
+                  "endLine": 90,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'value' in 'ActionResult<Sesiune>.implicit operator ActionResult<Sesiune>(Sesiune value)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 20,
+                  "endLine": 99,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 20,
+                  "endLine": 107,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 37,
+                  "endLine": 120,
+                  "endColumn": 96
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 16,
+                  "endLine": 122,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 13,
+                  "endLine": 34,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'nume' in 'CD.CD(string nume, int dimensiuneMB, VitezaInscriptionare vitezaMaxInscriptionare, TipCD tip, decimal spatiuOcupat, int nrDeSesiuni)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 29,
+                  "endLine": 27,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 25,
+                  "endLine": 39,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8634",
+          "level": "warning",
+          "message": "The type 'GestiuneCD.Models.Entities.CD?' cannot be used as type parameter 'TEntity' in the generic type or method 'DbContext.Remove<TEntity>(TEntity)'. Nullability of type argument 'GestiuneCD.Models.Entities.CD?' doesn't match 'class' constraint.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'value' in 'ActionResult<CD>.implicit operator ActionResult<CD>(CD value)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 20,
+                  "endLine": 42,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 20,
+                  "endLine": 50,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Cd' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Entities/Sesiune.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 16,
+                  "endLine": 13,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Nume' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Entities/CD.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 16,
+                  "endLine": 41,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Errors' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiValidationResponse.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 16,
+                  "endLine": 5,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 93,
+                  "endLine": 34,
+                  "endColumn": 106
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 93,
+                  "endLine": 35,
+                  "endColumn": 106
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CDs' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 16,
+                  "endLine": 9,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Sesiuni' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 16,
+                  "endLine": 9,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 13,
+                  "endLine": 20,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 18,
+                  "endLine": 29,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiResponse.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 22,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 30,
+                  "endLine": 105,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 33,
+                  "endLine": 108,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'nume' in 'CD.CD(string nume, int dimensiuneMB, VitezaInscriptionare vitezaMaxInscriptionare, TipCD tip, decimal spatiuOcupat, int nrDeSesiuni)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 29,
+                  "endLine": 107,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'BaseApiController'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BaseApiController.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'BugsController'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'BugsController.BugsController(AppDbContext)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 16,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'BugsController.GetNotFoundRequest()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 29,
+                  "endLine": 17,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'BugsController.GetServerError()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 29,
+                  "endLine": 30,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'BugsController.GetBadRequest()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 29,
+                  "endLine": 40,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'BugsController.GetNotFoundRequest(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 29,
+                  "endLine": 46,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDsController'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/CDsController.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDsController.CDsController(ICDService<CD>)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/CDsController.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 16,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 18,
+                  "endLine": 14,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.SesiuniController(ISesiuneService<Sesiune>)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 16,
+                  "endLine": 18,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.GetSesiuni()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 63,
+                  "endLine": 25,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.GetSesiune(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 50,
+                  "endLine": 32,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.PutSesiune(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 42,
+                  "endLine": 48,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.PostSesiune(SesiuneSetupDTO, decimal?)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 50,
+                  "endLine": 64,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.DeleteSesiune(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 42,
+                  "endLine": 79,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.InchideSesiuni()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 50,
+                  "endLine": 93,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'InitialCreate'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211018120030_InitialCreate.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 26,
+                  "endLine": 7,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'InitialCreate.Up(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211018120030_InitialCreate.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 33,
+                  "endLine": 9,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'InitialCreate.Down(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211018120030_InitialCreate.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 33,
+                  "endLine": 32,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'InitialCreate.BuildTargetModel(ModelBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211018120030_InitialCreate.Designer.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SecondMigration'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085048_SecondMigration.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 26,
+                  "endLine": 7,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SecondMigration.Up(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085048_SecondMigration.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 33,
+                  "endLine": 9,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SecondMigration.Down(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085048_SecondMigration.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 33,
+                  "endLine": 20,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SecondMigration.BuildTargetModel(ModelBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085048_SecondMigration.Designer.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ThirdMigration'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085711_ThirdMigration.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 26,
+                  "endLine": 7,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ThirdMigration.Up(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085711_ThirdMigration.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 33,
+                  "endLine": 9,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ThirdMigration.Down(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085711_ThirdMigration.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 33,
+                  "endLine": 22,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ThirdMigration.BuildTargetModel(ModelBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019085711_ThirdMigration.Designer.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FourthMigration'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019191045_FourthMigration.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 26,
+                  "endLine": 7,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FourthMigration.Up(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019191045_FourthMigration.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 33,
+                  "endLine": 9,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FourthMigration.Down(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019191045_FourthMigration.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 33,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FourthMigration.BuildTargetModel(ModelBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019191045_FourthMigration.Designer.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FifthMigration'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211020193809_FifthMigration.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 26,
+                  "endLine": 8,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FifthMigration.Up(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211020193809_FifthMigration.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 33,
+                  "endLine": 10,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FifthMigration.Down(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211020193809_FifthMigration.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 33,
+                  "endLine": 70,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'FifthMigration.BuildTargetModel(ModelBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211020193809_FifthMigration.Designer.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 33,
+                  "endLine": 18,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SixthMigration'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211022083438_SixthMigration.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 26,
+                  "endLine": 7,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SixthMigration.Up(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211022083438_SixthMigration.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 33,
+                  "endLine": 9,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SixthMigration.Down(MigrationBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211022083438_SixthMigration.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 33,
+                  "endLine": 23,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SixthMigration.BuildTargetModel(ModelBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211022083438_SixthMigration.Designer.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 33,
+                  "endLine": 18,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'StatusSesiune.Deschis'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/StatusSesiune.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'StatusSesiune.Inchis'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/StatusSesiune.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'TipCD.CDDA'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/TipCD.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'TipCD.CDR'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/TipCD.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'TipCD.CDRW'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/TipCD.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 9,
+                  "endLine": 10,
+                  "endColumn": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'TipSesiune.Citire'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/TipSesiune.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'TipSesiune.Scriere'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/TipSesiune.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 16
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'VitezaInscriptionare.x4'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/VitezaInscriptionare.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'VitezaInscriptionare.x8'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/VitezaInscriptionare.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'VitezaInscriptionare.x16'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/VitezaInscriptionare.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 9,
+                  "endLine": 10,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'VitezaInscriptionare.x24'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/VitezaInscriptionare.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 9,
+                  "endLine": 11,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'VitezaInscriptionare.x32'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/VitezaInscriptionare.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 9,
+                  "endLine": 12,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'VitezaInscriptionare.x40'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/VitezaInscriptionare.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 9,
+                  "endLine": 13,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'VitezaInscriptionare.x48'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Enums/VitezaInscriptionare.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 9,
+                  "endLine": 14,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiException'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiException.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiException.ApiException(int, string, string)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 16,
+                  "endLine": 5,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiException.Details'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiException.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiResponse'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiResponse.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiResponse.ApiResponse(int, string)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiResponse.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 16,
+                  "endLine": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiResponse.StatusCode'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiResponse.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 20,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiResponse.Message'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiResponse.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiValidationErrorResponse'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiValidationResponse.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiValidationErrorResponse.ApiValidationErrorResponse()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiValidationResponse.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 16,
+                  "endLine": 5,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ApiValidationErrorResponse.Errors'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiValidationResponse.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 36,
+                  "endLine": 8,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ExceptionMiddleware'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ExceptionMiddleware.ExceptionMiddleware(RequestDelegate, ILogger<ExceptionMiddleware>, IHostEnvironment)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 16,
+                  "endLine": 12,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ExceptionMiddleware.InvokeAsync(HttpContext)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 27,
+                  "endLine": 20,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'AppDbContext'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'AppDbContext.AppDbContext(DbContextOptions<AppDbContext>)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 16,
+                  "endLine": 9,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'AppDbContext.CDs'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 26,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'AppDbContext.Sesiuni'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 31,
+                  "endLine": 14,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'AppDbContext.OnModelCreating(ModelBuilder)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 33,
+                  "endLine": 16,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDConfiguration'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/Config/CDConfiguration.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDConfiguration.Configure(EntityTypeBuilder<CD>)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/Config/CDConfiguration.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 21,
+                  "endLine": 9,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneConfiguration'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/Config/SesiuneConfiguration.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneConfiguration.Configure(EntityTypeBuilder<Sesiune>)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/Config/SesiuneConfiguration.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 21,
+                  "endLine": 9,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'DbInitializer'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'DbInitializer.DbInitializer(IServiceScopeFactory)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 16,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'DbInitializer.Initialize()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 21,
+                  "endLine": 16,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'DbInitializer.SeedData()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 21,
+                  "endLine": 23,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'IDbInitializer'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/IDbInitializer.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 22,
+                  "endLine": 3,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDService'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDService.CDService(AppDbContext)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 16,
+                  "endLine": 15,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDService.CreateItemAsync(CDSetupDTO)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 45,
+                  "endLine": 20,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDService.DeleteItemAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 45,
+                  "endLine": 34,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDService.GetItemByIdAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 31,
+                  "endLine": 45,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDService.GetItemsAsync(bool?, bool?, int?, VitezaInscriptionare?, TipCD?, bool?)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 44,
+                  "endLine": 53,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'CDService.UpdateItemAsync(int, CDUpdateDTO)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 45,
+                  "endLine": 100,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ICDService<T>'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ICDService.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 22,
+                  "endLine": 8,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ICDService<T>.GetItemByIdAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ICDService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 17,
+                  "endLine": 10,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ICDService<T>.GetItemsAsync(bool?, bool?, int?, VitezaInscriptionare?, TipCD?, bool?)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ICDService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 30,
+                  "endLine": 11,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ICDService<T>.UpdateItemAsync(int, CDUpdateDTO)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ICDService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 31,
+                  "endLine": 12,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ICDService<T>.CreateItemAsync(CDSetupDTO)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ICDService.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 31,
+                  "endLine": 13,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ICDService<T>.DeleteItemAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ICDService.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 31,
+                  "endLine": 14,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ISesiuneService<T>'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ISesiuneService.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 22,
+                  "endLine": 7,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ISesiuneService<T>.GetItemByIdAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ISesiuneService.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ISesiuneService<T>.GetItemsAsync()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ISesiuneService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 30,
+                  "endLine": 10,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ISesiuneService<T>.UpdateItemAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ISesiuneService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 31,
+                  "endLine": 11,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ISesiuneService<T>.CreateItemAsync(SesiuneSetupDTO, decimal?)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ISesiuneService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 31,
+                  "endLine": 12,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ISesiuneService<T>.DeleteItemAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ISesiuneService.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 31,
+                  "endLine": 13,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ISesiuneService<T>.InchideSesiunileDeschise()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/Interfaces/ISesiuneService.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 30,
+                  "endLine": 14,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService.SesiuneService(AppDbContext)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 16,
+                  "endLine": 15,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService.CreateItemAsync(SesiuneSetupDTO, decimal?)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 50,
+                  "endLine": 20,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService.DeleteItemAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 50,
+                  "endLine": 75,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService.GetItemByIdAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 36,
+                  "endLine": 102,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService.GetItemsAsync()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 49,
+                  "endLine": 110,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService.UpdateItemAsync(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 50,
+                  "endLine": 115,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'SesiuneService.InchideSesiunileDeschise()'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 49,
+                  "endLine": 146,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ErrorController'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/ErrorController.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "CS1591",
+          "level": "warning",
+          "message": "Missing XML comment for publicly visible type or member 'ErrorController.Error(int)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/ErrorController.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 30,
+                  "endLine": 11,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 4
+          }
+        },
+        {
+          "ruleId": "S4136",
+          "level": "warning",
+          "message": "All 'GetNotFoundRequest' method overloads should be adjacent.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 29,
+                  "endLine": 17,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 29,
+                  "endLine": 46,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Non-adjacent overload"
+            }
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CDSetupDTO' to match pascal case naming rules, consider using 'CdSetupDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/DTOs/CDSetupDTO.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CDUpdateDTO' to match pascal case naming rules, consider using 'CdUpdateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/DTOs/CDUpdateDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'SesiuneSetupDTO' to match pascal case naming rules, consider using 'SesiuneSetupDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/DTOs/SesiuneSetupDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 13,
+                  "endLine": 70,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 50,
+                  "endLine": 20,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 13,
+                  "endLine": 22,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 13,
+                  "endLine": 26,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 65,
+                  "endLine": 26,
+                  "endColumn": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 13,
+                  "endLine": 29,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 62,
+                  "endLine": 29,
+                  "endColumn": 64
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 98,
+                  "endLine": 29,
+                  "endColumn": 100
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 13,
+                  "endLine": 32,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 61,
+                  "endLine": 32,
+                  "endColumn": 63
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 13,
+                  "endLine": 38,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 62,
+                  "endLine": 38,
+                  "endColumn": 64
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 13,
+                  "endLine": 41,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 13,
+                  "endLine": 44,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 61,
+                  "endLine": 44,
+                  "endColumn": 63
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 13,
+                  "endLine": 48,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 100,
+                  "endLine": 62,
+                  "endColumn": 101
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 13,
+                  "endLine": 67,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+1",
+              "10": "+1",
+              "11": "+1",
+              "12": "+1",
+              "13": "+1",
+              "14": "+1",
+              "15": "+1",
+              "2": "+1",
+              "3": "+1",
+              "4": "+1",
+              "5": "+1",
+              "6": "+1",
+              "7": "+1",
+              "8": "+1",
+              "9": "+1"
+            }
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 13,
+                  "endLine": 97,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 23,
+                  "endLine": 105,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 23,
+                  "endLine": 78,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23,
+                  "endLine": 23,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 23,
+                  "endLine": 30,
+                  "endColumn": 110
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 23,
+                  "endLine": 33,
+                  "endColumn": 114
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 23,
+                  "endLine": 39,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 23,
+                  "endLine": 42,
+                  "endColumn": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 23,
+                  "endLine": 45,
+                  "endColumn": 145
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 13,
+                  "endLine": 137,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 23,
+                  "endLine": 118,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/SesiuneService.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 23,
+                  "endLine": 123,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4457",
+          "level": "warning",
+          "message": "Split this method into two, one handling parameters check and the other handling the asynchronous code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/CDsController.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 58,
+                  "endLine": 23,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/CDsController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 23,
+                  "endLine": 27,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2201",
+          "level": "warning",
+          "message": "Use the return value of method 'ToString'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 13,
+                  "endLine": 34,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 23,
+                  "endLine": 25,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019191045_FourthMigration.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 33,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 23,
+                  "endLine": 48,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 23,
+                  "endLine": 37,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3923",
+          "level": "warning",
+          "message": "This conditional operation returns the same value whether the condition is \"true\" or \"false\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 32,
+                  "endLine": 34,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogError(ILogger, Exception?, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 38,
+                  "endLine": 29,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GetDefaultMessageForStatusCode' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiResponse.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 24,
+                  "endLine": 14,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'dateTimeProperties'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 25,
+                  "endLine": 24,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 13,
+                  "endLine": 125,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'vitezaDeInscriptionare' to 'vitezaMaxInscriptionare' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 163,
+                  "endLine": 53,
+                  "endColumn": 185
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Services/CDService.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 23,
+                  "endLine": 103,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2254": {
+          "id": "CA2254",
+          "shortDescription": "Template should be a static expression",
+          "fullDescription": "The logging message template should not vary between calls.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2254",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS1591": {
+          "id": "CS1591",
+          "shortDescription": "Missing XML comment for publicly visible type or member",
+          "fullDescription": "The /doc compiler option was specified, but one or more constructs did not have comments.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1591)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8600": {
+          "id": "CS8600",
+          "shortDescription": "Converting null literal or possible null value to non-nullable type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8600)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8603": {
+          "id": "CS8603",
+          "shortDescription": "Possible null reference return.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8604": {
+          "id": "CS8604",
+          "shortDescription": "Possible null reference argument.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8604)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8625": {
+          "id": "CS8625",
+          "shortDescription": "Cannot convert null literal to non-nullable reference type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8629": {
+          "id": "CS8629",
+          "shortDescription": "Nullable value type may be null.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8629)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8634": {
+          "id": "CS8634",
+          "shortDescription": "The type cannot be used as type parameter in the generic type or method. Nullability of type argument doesn't match 'class' constraint.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8634)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S101": {
+          "id": "S101",
+          "shortDescription": "Types should be named in PascalCase",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently. This rule checks whether or not type names are using PascalCase. To reduce noise, two consecutive upper case characters are allowed unless they form the whole type name. So, MyXClass is compliant, but XC on its own is not.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General exceptions should never be thrown",
+          "fullDescription": "Throwing such general exceptions as Exception, SystemException, ApplicationException, IndexOutOfRangeException, NullReferenceException, OutOfMemoryException and ExecutionEngineException prevents calling methods from handling true, system-generated exceptions differently than application-generated errors.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S1186": {
+          "id": "S1186",
+          "shortDescription": "Methods should not be empty",
+          "fullDescription": "There are several reasons for a method not to have a method body:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1186",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S2201": {
+          "id": "S2201",
+          "shortDescription": "Return values from functions without side effects should not be ignored",
+          "fullDescription": "When the call to a function doesn’t have any side effects, what is the point of making the call if the results are ignored? In such case, either the function call is useless and should be dropped or the source code doesn’t behave as expected.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2201",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S2737": {
+          "id": "S2737",
+          "shortDescription": "\"catch\" clauses should do more than rethrow",
+          "fullDescription": "A catch clause that only rethrows the caught exception has the same effect as omitting the catch altogether and letting it bubble up automatically, but with more code and the additional detriment of leaving maintainers scratching their heads.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2737",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "Cognitive Complexity is a measure of how hard the control flow of a method is to understand. Methods with high Cognitive Complexity will be difficult to maintain.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3923": {
+          "id": "S3923",
+          "shortDescription": "All branches in a conditional structure should not have exactly the same implementation",
+          "fullDescription": "Having all branches in a switch or if chain with the same implementation is an error. Either a copy-paste error was made and something different should be executed, or there shouldn’t be a switch/if chain at all.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3923",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4136": {
+          "id": "S4136",
+          "shortDescription": "Method overloads should be grouped together",
+          "fullDescription": "For clarity, all overloads of the same method should be grouped together. That lets both users and maintainers quickly understand all the current available options.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4136",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4457": {
+          "id": "S4457",
+          "shortDescription": "Parameter validation in \"async\"/\"await\" methods should be wrapped",
+          "fullDescription": "Because of the way async/await methods are rewritten by the compiler, any exceptions thrown during the parameters check will happen only when the task is observed. That could happen far away from the source of the buggy code or never happen for fire-and-forget tasks.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4457",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "The name of a parameter in an externally visible. This rule raises an issue when method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

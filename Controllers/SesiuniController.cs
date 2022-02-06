@@ -11,10 +11,14 @@ using GestiuneCD.Models;
 
 namespace GestiuneCD.Controllers
 {
+    /**
+     */
     public class SesiuniController : BaseApiController
     {
         private readonly ISesiuneService<Sesiune> _sesiuneService;
 
+        /**
+         */
         public SesiuniController(ISesiuneService<Sesiune> sesiuneService)
         {
             _sesiuneService = sesiuneService;
@@ -89,6 +93,8 @@ namespace GestiuneCD.Controllers
             }
         }
 
+        /**
+         */
         [HttpGet("/InchideToateSesiunileDeschise")]
         public async Task<ActionResult<Sesiune>> InchideSesiuni()
         {

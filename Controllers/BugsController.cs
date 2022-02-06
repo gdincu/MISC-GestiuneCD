@@ -4,15 +4,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GestiuneCD.Controllers
 {
+    /**
+     */
     public class BugsController : BaseApiController
     {
         private readonly AppDbContext _context;
-
+        /**
+         */
         public BugsController(AppDbContext context)
         {
             _context = context;
         }
 
+        /**
+         * public IActionResult Index()
+         */
         [HttpGet("notfound")]
         public ActionResult GetNotFoundRequest()
         {
@@ -26,6 +32,8 @@ namespace GestiuneCD.Controllers
             return Ok();
         }
 
+        /**
+         */
         [HttpGet("servererror")]
         public ActionResult GetServerError()
         {
@@ -34,8 +42,11 @@ namespace GestiuneCD.Controllers
             thing.ToString();
 
             return Ok();
+           
         }
 
+        /** 
+         */
         [HttpGet("badrequest")]
         public ActionResult GetBadRequest()
         {
