@@ -1,15 +1,14 @@
 H
-9E:\repos\MISC-GestiuneCD\Controllers\BaseApiController.csr		
-z
-6E:\repos\MISC-GestiuneCD\Controllers\BugsController.cs
- 8r)	 "$%'()*+-./0123xÇ
- "$*0¥
+9E:\repos\MISC-GestiuneCD\Controllers\BaseApiController.csr	
+|
+6E:\repos\MISC-GestiuneCD\Controllers\BugsController.cs	 8j*r(	
+ !%&'(,.2345689:;<=>xÇ	 (,5;¥
 5E:\repos\MISC-GestiuneCD\Controllers\CDsController.cs 8j!"#$34567FGHIJQRSTUVWrE	
 %&'()*+,-./0189:;<=>?@ABCDKLMNOXYZ[\]^_`abcdefxÇ*+/=>BN]^bV
-7E:\repos\MISC-GestiuneCD\Controllers\ErrorController.cs 8r	
-Çµ
-9E:\repos\MISC-GestiuneCD\Controllers\SesiuniController.cs 8j-.=>MrS	
- !"#$%&'()*+/0123456789:;?@ABCDEFGHIJKNOPQRSTUVWXYZ\]^_`abxÇ$%)459DEISTX_Ä
+7E:\repos\MISC-GestiuneCD\Controllers\ErrorController.cs 8r	
+Çµ
+9E:\repos\MISC-GestiuneCD\Controllers\SesiuniController.cs 8j"12ABQrS	
+ #$%&'()*+,-./3456789:;<=>?CDEFGHIJKLMNORSTUVWXYZ[\]^bcdefghxÇ()-89=HIMWX\eÄ
 CE:\repos\MISC-GestiuneCD\Migrations\20211018120030_InitialCreate.cs 8r!	
  !"#$%&Ç"s
 EE:\repos\MISC-GestiuneCD\Migrations\20211019085048_SecondMigration.cs 8r	
@@ -48,9 +47,9 @@ rÅ
 5E:\repos\MISC-GestiuneCD\Models\Errors\ApiResponse.cs 8r	xÇS
 ?E:\repos\MISC-GestiuneCD\Models\Errors\ApiValidationResponse.cs 8r
 	
-à
-AE:\repos\MISC-GestiuneCD\Models\Middleware\ExceptionMiddleware.cs 8jr%	
-!"#%')*+,-xÇ!"#%')b
+Ñ
+AE:\repos\MISC-GestiuneCD\Models\Middleware\ExceptionMiddleware.cs 8jr#	
+ !"#%')+,-./xÇ!"#%')+b
 :E:\repos\MISC-GestiuneCD\Models\Specifications\CDParams.cs 8j
  r	!"#k
 4E:\repos\MISC-GestiuneCD\Persistence\AppDbContext.cs 8r	

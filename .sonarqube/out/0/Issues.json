@@ -453,18 +453,165 @@
           }
         },
         {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Cd' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Entities/Sesiune.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 16,
+                  "endLine": 13,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Errors' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiValidationResponse.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 16,
+                  "endLine": 5,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Nume' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Entities/CD.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 16,
+                  "endLine": 41,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS8602",
           "level": "warning",
           "message": "Dereference of a possibly null reference.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
                 "region": {
-                  "startLine": 34,
+                  "startLine": 20,
                   "startColumn": 13,
-                  "endLine": 34,
-                  "endColumn": 18
+                  "endLine": 20,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 18,
+                  "endLine": 29,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 102,
+                  "endLine": 37,
+                  "endColumn": 115
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'CDs' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 16,
+                  "endLine": 9,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Sesiuni' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 16,
+                  "endLine": 9,
+                  "endColumn": 28
                 }
               }
             }
@@ -579,195 +726,6 @@
           }
         },
         {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Cd' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Entities/Sesiune.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 16,
-                  "endLine": 13,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Nume' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Entities/CD.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 16,
-                  "endLine": 41,
-                  "endColumn": 18
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Errors' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Errors/ApiValidationResponse.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 16,
-                  "endLine": 5,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Dereference of a possibly null reference.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 93,
-                  "endLine": 34,
-                  "endColumn": 106
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Dereference of a possibly null reference.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 93,
-                  "endLine": 35,
-                  "endColumn": 106
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'CDs' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 16,
-                  "endLine": 9,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Sesiuni' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/AppDbContext.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 16,
-                  "endLine": 9,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Dereference of a possibly null reference.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 13,
-                  "endLine": 20,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Dereference of a possibly null reference.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Persistence/DbInitializer%20.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 18,
-                  "endLine": 29,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Possible null reference return.",
@@ -860,115 +818,10 @@
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BaseApiController.cs",
                 "region": {
-                  "startLine": 7,
+                  "startLine": 10,
                   "startColumn": 18,
-                  "endLine": 7,
+                  "endLine": 10,
                   "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'BugsController'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 18,
-                  "endLine": 7,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'BugsController.BugsController(AppDbContext)'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 16,
-                  "endLine": 11,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'BugsController.GetNotFoundRequest()'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 29,
-                  "endLine": 17,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'BugsController.GetServerError()'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
-                "region": {
-                  "startLine": 30,
-                  "startColumn": 29,
-                  "endLine": 30,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'BugsController.GetBadRequest()'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 29,
-                  "endLine": 40,
-                  "endColumn": 42
                 }
               }
             }
@@ -986,9 +839,9 @@
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
                 "region": {
-                  "startLine": 46,
+                  "startLine": 57,
                   "startColumn": 29,
-                  "endLine": 46,
+                  "endLine": 57,
                   "endColumn": 47
                 }
               }
@@ -1043,57 +896,15 @@
         {
           "ruleId": "CS1591",
           "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'SesiuniController'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 18,
-                  "endLine": 14,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.SesiuniController(ISesiuneService<Sesiune>)'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 16,
-                  "endLine": 18,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
           "message": "Missing XML comment for publicly visible type or member 'SesiuniController.GetSesiuni()'",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
                 "region": {
-                  "startLine": 25,
+                  "startLine": 29,
                   "startColumn": 63,
-                  "endLine": 25,
+                  "endLine": 29,
                   "endColumn": 73
                 }
               }
@@ -1112,9 +923,9 @@
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
                 "region": {
-                  "startLine": 32,
+                  "startLine": 36,
                   "startColumn": 50,
-                  "endLine": 32,
+                  "endLine": 36,
                   "endColumn": 60
                 }
               }
@@ -1133,9 +944,9 @@
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
                 "region": {
-                  "startLine": 48,
+                  "startLine": 52,
                   "startColumn": 42,
-                  "endLine": 48,
+                  "endLine": 52,
                   "endColumn": 52
                 }
               }
@@ -1154,9 +965,9 @@
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
                 "region": {
-                  "startLine": 64,
+                  "startLine": 68,
                   "startColumn": 50,
-                  "endLine": 64,
+                  "endLine": 68,
                   "endColumn": 61
                 }
               }
@@ -1175,31 +986,10 @@
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
                 "region": {
-                  "startLine": 79,
+                  "startLine": 83,
                   "startColumn": 42,
-                  "endLine": 79,
+                  "endLine": 83,
                   "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'SesiuniController.InchideSesiuni()'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/SesiuniController.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 50,
-                  "endLine": 93,
-                  "endColumn": 64
                 }
               }
             }
@@ -2219,57 +2009,15 @@
         {
           "ruleId": "CS1591",
           "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'ExceptionMiddleware'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 18,
-                  "endLine": 7,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'ExceptionMiddleware.ExceptionMiddleware(RequestDelegate, ILogger<ExceptionMiddleware>, IHostEnvironment)'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 16,
-                  "endLine": 12,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "CS1591",
-          "level": "warning",
           "message": "Missing XML comment for publicly visible type or member 'ExceptionMiddleware.InvokeAsync(HttpContext)'",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
                 "region": {
-                  "startLine": 20,
+                  "startLine": 24,
                   "startColumn": 27,
-                  "endLine": 20,
+                  "endLine": 24,
                   "endColumn": 38
                 }
               }
@@ -3162,82 +2910,45 @@
           }
         },
         {
-          "ruleId": "CS1591",
+          "ruleId": "CS1587",
           "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'ErrorController'",
+          "message": "XML comment is not placed on a valid language element",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/ErrorController.cs",
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BaseApiController.cs",
                 "region": {
-                  "startLine": 9,
-                  "startColumn": 18,
-                  "endLine": 9,
-                  "endColumn": 33
+                  "startLine": 7,
+                  "startColumn": 5,
+                  "endLine": 7,
+                  "endColumn": 6
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 4
+            "warningLevel": 2
           }
         },
         {
-          "ruleId": "CS1591",
+          "ruleId": "S125",
           "level": "warning",
-          "message": "Missing XML comment for publicly visible type or member 'ErrorController.Error(int)'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/ErrorController.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 30,
-                  "endLine": 11,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 4
-          }
-        },
-        {
-          "ruleId": "S4136",
-          "level": "warning",
-          "message": "All 'GetNotFoundRequest' method overloads should be adjacent.",
+          "message": "Remove this commented out code.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
                 "region": {
-                  "startLine": 17,
-                  "startColumn": 29,
-                  "endLine": 17,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
-                "region": {
-                  "startLine": 46,
-                  "startColumn": 29,
-                  "endLine": 46,
-                  "endColumn": 47
+                  "startLine": 42,
+                  "startColumn": 13,
+                  "endLine": 42,
+                  "endColumn": 32
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Non-adjacent overload"
-            }
+            "warningLevel": 1
           }
         },
         {
@@ -3259,6 +2970,43 @@
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4136",
+          "level": "warning",
+          "message": "All 'GetNotFoundRequest' method overloads should be adjacent.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 29,
+                  "endLine": 23,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 29,
+                  "endLine": 57,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Non-adjacent overload"
+            }
           }
         },
         {
@@ -3295,6 +3043,48 @@
                   "startColumn": 18,
                   "endLine": 9,
                   "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_env' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 43,
+                  "endLine": 13,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019191045_FourthMigration.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 33,
+                  "endLine": 14,
+                  "endColumn": 37
                 }
               }
             }
@@ -3849,18 +3639,18 @@
           }
         },
         {
-          "ruleId": "S2201",
+          "ruleId": "S1481",
           "level": "warning",
-          "message": "Use the return value of method 'ToString'.",
+          "message": "Remove the unused local variable 'thing'.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///E:/repos/MISC-GestiuneCD/Controllers/BugsController.cs",
                 "region": {
-                  "startLine": 34,
-                  "startColumn": 13,
-                  "endLine": 34,
-                  "endColumn": 29
+                  "startLine": 40,
+                  "startColumn": 17,
+                  "endLine": 40,
+                  "endColumn": 22
                 }
               }
             }
@@ -3891,18 +3681,18 @@
           }
         },
         {
-          "ruleId": "S1186",
-          "level": "warning",
-          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogError(ILogger, Exception?, string?, params object?[])'",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Migrations/20211019191045_FourthMigration.cs",
+                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
                 "region": {
-                  "startLine": 14,
-                  "startColumn": 33,
-                  "endLine": 14,
-                  "endColumn": 37
+                  "startLine": 33,
+                  "startColumn": 38,
+                  "endLine": 33,
+                  "endColumn": 48
                 }
               }
             }
@@ -3945,48 +3735,6 @@
                   "startColumn": 23,
                   "endLine": 37,
                   "endColumn": 81
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3923",
-          "level": "warning",
-          "message": "This conditional operation returns the same value whether the condition is \"true\" or \"false\".",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 32,
-                  "endLine": 34,
-                  "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogError(ILogger, Exception?, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/repos/MISC-GestiuneCD/Models/Middleware/ExceptionMiddleware.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 38,
-                  "endLine": 29,
-                  "endColumn": 48
                 }
               }
             }
@@ -4130,6 +3878,20 @@
             "tags": [
               "Telemetry",
               "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS1587": {
+          "id": "CS1587",
+          "shortDescription": "XML comment is not placed on a valid language element",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1587)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
             ]
           }
         },
@@ -4310,6 +4072,23 @@
             ]
           }
         },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
         "S1481": {
           "id": "S1481",
           "shortDescription": "Unused local variables should be removed",
@@ -4324,22 +4103,6 @@
               "SonarWay",
               "MainSourceScope",
               "TestSourceScope"
-            ]
-          }
-        },
-        "S2201": {
-          "id": "S2201",
-          "shortDescription": "Return values from functions without side effects should not be ignored",
-          "fullDescription": "When the call to a function doesn’t have any side effects, what is the point of making the call if the results are ignored? In such case, either the function call is useless and should be dropped or the source code doesn’t behave as expected.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2201",
-          "properties": {
-            "category": "Major Bug",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope"
             ]
           }
         },
@@ -4368,23 +4131,6 @@
           "properties": {
             "category": "Critical Code Smell",
             "isEnabledByDefault": false,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S3923": {
-          "id": "S3923",
-          "shortDescription": "All branches in a conditional structure should not have exactly the same implementation",
-          "fullDescription": "Having all branches in a switch or if chain with the same implementation is an error. Either a copy-paste error was made and something different should be executed, or there shouldn’t be a switch/if chain at all.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3923",
-          "properties": {
-            "category": "Major Bug",
-            "isEnabledByDefault": true,
             "tags": [
               "C#",
               "SonarWay",
@@ -4424,6 +4170,24 @@
               "SonarWay",
               "MainSourceScope",
               "TestSourceScope"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields only used to store values without reading them later is a case of dead store. So changing the value of such field is useless and most probably indicates a serious error in the code.",
+          "defaultLevel": "note",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope",
+              "Unnecessary"
             ]
           }
         },

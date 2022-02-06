@@ -21,6 +21,8 @@ namespace GestiuneCD.Models.Middleware
             _next = next;
         }
 
+        /**
+         */
         public async Task InvokeAsync(HttpContext context)
         {
             try
@@ -30,7 +32,7 @@ namespace GestiuneCD.Models.Middleware
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, ex.Message);
+                _logger.LogError(ex, _env.ApplicationName + ex.Message);
                 context.Response.ContentType = "application/json";
                 context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 

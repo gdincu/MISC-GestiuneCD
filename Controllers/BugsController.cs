@@ -37,9 +37,6 @@ namespace GestiuneCD.Controllers
         [HttpGet("servererror")]
         public ActionResult GetServerError()
         {
-            var thing = _context.CDs.Find(999);
-
-            //thing.ToString();
 
             return Ok();
            
