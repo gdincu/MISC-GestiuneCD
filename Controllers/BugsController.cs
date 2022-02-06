@@ -39,7 +39,7 @@ namespace GestiuneCD.Controllers
         {
             var thing = _context.CDs.Find(999);
 
-            thing.ToString();
+            //thing.ToString();
 
             return Ok();
            
